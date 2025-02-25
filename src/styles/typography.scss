@@ -1,0 +1,11 @@
+/* IMPORT WEBSITE FONTS */
+@use '@fontsource/roboto';
+@use '@fontsource/roboto-condensed';
+
+ul {
+  list-style: disc inside none;
+}
+
+ol {
+  list-style: decimal inside none;
+}
