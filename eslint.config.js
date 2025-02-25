@@ -1,10 +1,12 @@
 import js from '@eslint/js';
-import globals from 'globals';
+import importPlugin from 'eslint-plugin-import';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
+import globals from 'globals';
 
 export default [
+  importPlugin.flatConfigs.recommended,
   { ignores: ['dist'] },
   {
     files: ['**/*.{js,jsx}'],
@@ -17,7 +19,15 @@ export default [
         sourceType: 'module'
       }
     },
-    settings: { react: { version: '18.3' } },
+    settings: {
+      react: { version: '18.3' },
+      'import/resolver': {
+        node: {
+          extensions: ['.js', '.jsx'],
+          moduleDirectory: ['src', 'node_modules']
+        }
+      }
+    },
     plugins: {
       react,
       'react-hooks': reactHooks,
@@ -32,58 +42,17 @@ export default [
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       camelcase: ['error', { allow: ['MRT_GlobalFilterTextField'] }],
       'eol-last': 'error',
-      // "import/order": [
-      //   "error",
-      //   {
-      //     "groups": ["builtin", "external", "internal", ["parent", "sibling", "index"]],
-      //     "pathGroups": [
-      //       {
-      //         "pattern": "@(react|react-native)",
-      //         "group": "external",
-      //         "position": "before"
-      //       },
-      //       {
-      //         "pattern": "prop-types",
-      //         "group": "external",
-      //         "position": "before"
-      //       },
-      //       {
-      //         "pattern": "ajv**",
-      //         "group": "external",
-      //         "position": "before"
-      //       },
-      //       {
-      //         "pattern": "components/**",
-      //         "group": "internal"
-      //       },
-      //       {
-      //         "pattern": "containers/**",
-      //         "group": "internal"
-      //       },
-      //       {
-      //         "pattern": "services/**",
-      //         "group": "internal"
-      //       },
-      //       {
-      //         "pattern": "styles/**",
-      //         "group": "internal"
-      //       },
-      //       {
-      //         "pattern": "tests/**",
-      //         "group": "internal"
-      //       },
-      //       {
-      //         "pattern": "utils/**",
-      //         "group": "internal"
-      //       }
-      //     ],
-      //     "pathGroupsExcludedImportTypes": [],
-      //     "alphabetize": {
-      //       "order": "asc",
-      //       "caseInsensitive": true
-      //     }
-      //   }
-      // ],
+      'import/order': [
+        'error',
+        {
+          groups: ['builtin', 'external', 'internal', ['parent', 'sibling', 'index']],
+          pathGroupsExcludedImportTypes: [],
+          alphabetize: {
+            order: 'asc',
+            caseInsensitive: true
+          }
+        }
+      ],
       'no-duplicate-imports': 'error',
       'no-restricted-imports': [
         'error',

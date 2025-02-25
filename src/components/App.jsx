@@ -1,10 +1,10 @@
-import Layout from 'components/layout/Layout';
-import Home from 'components/pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Facility from 'components/pages/Facility';
+import Layout from 'components/layout/Layout';
 import Calendar from 'components/pages/Calendar';
-import Gallery from 'components/pages/Gallery';
 import Contact from 'components/pages/Contact';
+import Facility from 'components/pages/Facility';
+import Gallery from 'components/pages/Gallery';
+import Home from 'components/pages/Home';
 import Team from 'components/pages/Team';
 
 function App() {
