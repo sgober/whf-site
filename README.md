@@ -21,11 +21,22 @@ Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
 ### Run Production Mode
 
-ADD HERE
+```
+yarn build
+yarn preview
+```
+
+Runs the app in the development mode.\
+Open [http://localhost:4173](http://localhost:5173) to view it in your browser.
 
 ## Deployment
 
-ADD HERE
+Ensure `master` branch is up to date with the latest and then run:
+```
+yarn deploy
+```
+
+Deploys the master branch to [GH Pages](https://sgober.github.io/whf-site/) and to actual website (ADD LINK)
 
 ## Formatters
 
