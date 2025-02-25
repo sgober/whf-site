@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from 'components/layout/Layout';
 import Calendar from 'components/pages/Calendar';
 import Contact from 'components/pages/Contact';
@@ -9,7 +9,7 @@ import Team from 'components/pages/Team';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route element={<Layout />} path="/">
           <Route index element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
           <Route element={<Home />} path="*" />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

@@ -31,12 +31,9 @@ Open [http://localhost:4173](http://localhost:5173) to view it in your browser.
 
 ## Deployment
 
-Ensure `master` branch is up to date with the latest and then run:
-```
-yarn deploy
-```
+Merge the lastest `dev` branch into the `prod` branch and netlify will take care of the rest.
 
-Deploys the master branch to [GH Pages](https://sgober.github.io/whf-site/) and to actual website (ADD LINK)
+Currently deploys on [netlify](https://lucky-fairy-4801fb.netlify.app/)
 
 ## Formatters
 

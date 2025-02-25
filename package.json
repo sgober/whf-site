@@ -12,9 +12,7 @@
     "lint:fix": "eslint . --ignore-pattern .gitignore --fix",
     "format": "prettier --check './**/*.{js,jsx,scss,md,json}' --config ./.prettierrc --ignore-path .gitignore",
     "format:fix": "prettier --write './**/*.{js,jsx,scss,md,json}' --config ./.prettierrc --ignore-path .gitignore",
-    "prepare": "husky install",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -b master -d dist"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -23,7 +21,6 @@
     "@fontsource/roboto-condensed": "^5.1.1",
     "@mui/material": "^6.4.5",
     "eslint-plugin-import": "^2.31.0",
-    "gh-pages": "^6.3.0",
     "husky": "^9.1.7",
     "lodash": "^4.17.21",
     "prettier": "^3.5.2",
