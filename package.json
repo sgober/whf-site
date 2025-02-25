@@ -10,9 +10,11 @@
     "lint": "eslint . --ignore-pattern .gitignore",
     "lint:fix": "eslint . --ignore-pattern .gitignore --fix",
     "format": "prettier --check './**/*.{js,jsx,scss,md,json}' --config ./.prettierrc --ignore-path .gitignore",
-    "format:fix": "prettier --write './**/*.{js,jsx,scss,md,json}' --config ./.prettierrc --ignore-path .gitignore"
+    "format:fix": "prettier --write './**/*.{js,jsx,scss,md,json}' --config ./.prettierrc --ignore-path .gitignore",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "husky": "^9.1.7",
     "prettier": "^3.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

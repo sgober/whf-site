@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <div> website to go here</div>
+      <div>website to go here</div>
     </>
   );
 }
