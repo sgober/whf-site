@@ -7,10 +7,12 @@ function Layout() {
   return (
     <>
       <Header />
-      <Box>
-        <Outlet />
+      <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, overflowY: 'auto' }}>
+        <Box sx={{ flexGrow: 1, maxWidth: 1200, mx: 'auto', p: 2 }}>
+          <Outlet />
+        </Box>
+        <Footer />
       </Box>
-      <Footer />
     </>
   );
 }

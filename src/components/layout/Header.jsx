@@ -9,6 +9,7 @@ function Header() {
     <AppBar component="nav" position="sticky">
       <Toolbar>
         {/* TODO: change to logo */}
+        {/* TODO: add mobile support */}
         <Typography sx={{ flexGrow: 1 }}>Walnut Hill Farm</Typography>
         <Tabs onChange={(e, newValue) => navigate(`/${newValue}`)} value={location.pathname.replace('/', '')}>
           <Tab label="Home" value="" />
