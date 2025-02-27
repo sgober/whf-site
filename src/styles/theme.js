@@ -5,7 +5,7 @@ const theme = createTheme({
   breakpoints: {
     values: {
       xs: 0,
-      sm: 550,
+      sm: 600,
       md: 850,
       lg: 1250,
       xl: 1550
@@ -42,6 +42,15 @@ const theme = createTheme({
       }
     },
     MuiLink: {
+      styleOverrides: {
+        root: {
+          '&:hover': {
+            cursor: 'pointer'
+          }
+        }
+      }
+    },
+    MuiListItem: {
       styleOverrides: {
         root: {
           '&:hover': {
