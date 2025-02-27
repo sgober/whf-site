@@ -53,6 +53,7 @@ export default [
           }
         }
       ],
+      'import/namespace': 'off',
       'no-duplicate-imports': 'error',
       'no-restricted-imports': [
         'error',

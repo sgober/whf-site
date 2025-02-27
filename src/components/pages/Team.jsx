@@ -1,19 +1,19 @@
 import { Box, Link, Typography } from '@mui/material';
-import TeamMember from 'components/util/TeamMember';
 import CaseyImage from 'assets/Nick1.png';
 import AbbyImage from 'assets/Nick1.png';
 import ErinImage from 'assets/Nick1.png';
+import TeamMember from 'components/util/TeamMember';
 
 function Team() {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
-      <Typography variant="h1" sx={{ textAlign: 'center' }}>
+      <Typography sx={{ textAlign: 'center' }} variant="h1">
         Our Team
       </Typography>
       <TeamMember image={CaseyImage} name="Cassandra Smith" title="CEO">
         <Typography>
           Casey's bio here. Outside of her farm duties, Cassandra is a Mental Health Counselor with{' '}
-          <Link variant="link" href="https://walnuthillcounseling.com/" target="_blank">
+          <Link href="https://walnuthillcounseling.com/" target="_blank" variant="link">
             Walnut Hill Counseling
           </Link>
           .

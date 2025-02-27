@@ -45,17 +45,17 @@ function Header() {
           <Typography sx={{ flexGrow: 1 }}>Walnut Hill Farm</Typography>
           {isMobile ? (
             <IconButton
-              onClick={() => setMenuOpen(!menuOpen)}
-              edge="start"
-              color="inherit"
               aria-label="menu"
+              color="inherit"
+              edge="start"
+              onClick={() => setMenuOpen(!menuOpen)}
               sx={{ mr: -2 }}>
               <Menu />
             </IconButton>
           ) : (
             <Tabs onChange={(e, newValue) => navigate(newValue)} value={location.pathname}>
-              {tabs.map(tab => (
-                <Tab label={tab.label} value={tab.value} />
+              {tabs.map((tab, index) => (
+                <Tab key={index} label={tab.label} value={tab.value} />
               ))}
             </Tabs>
           )}
