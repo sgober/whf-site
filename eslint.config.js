@@ -46,6 +46,18 @@ export default [
         'error',
         {
           groups: ['builtin', 'external', 'internal', ['parent', 'sibling', 'index']],
+          pathGroups: [
+            {
+              pattern: '@(react|react-native)',
+              group: 'external',
+              position: 'before'
+            },
+            {
+              pattern: 'prop-types',
+              group: 'external',
+              position: 'before'
+            }
+          ],
           pathGroupsExcludedImportTypes: [],
           alphabetize: {
             order: 'asc',

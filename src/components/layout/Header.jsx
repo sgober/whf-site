@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { Menu } from '@mui/icons-material';
 import {
   AppBar,
@@ -14,7 +15,6 @@ import {
   Typography,
   useMediaQuery
 } from '@mui/material';
-import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 function Header() {
@@ -38,8 +38,8 @@ function Header() {
   };
 
   return (
-    <>
-      <AppBar component="nav" position="sticky" showMenuIconButton={true}>
+    <React.Fragment>
+      <AppBar component="nav" position="sticky">
         <Toolbar>
           {/* TODO: change to logo */}
           <Typography sx={{ flexGrow: 1 }}>Walnut Hill Farm</Typography>
@@ -49,10 +49,11 @@ function Header() {
               color="inherit"
               edge="start"
               onClick={() => setMenuOpen(!menuOpen)}
-              sx={{ mr: -2 }}>
+              sx={{ mr: -1.5 }}>
               <Menu />
             </IconButton>
           ) : (
+            // TODO: UPDATE ACTIVE STYLING
             <Tabs onChange={(e, newValue) => navigate(newValue)} value={location.pathname}>
               {tabs.map((tab, index) => (
                 <Tab key={index} label={tab.label} value={tab.value} />
@@ -65,18 +66,18 @@ function Header() {
             {/* TODO: UPDATE THIS STYLING */}
             <List dense sx={{ py: 0 }}>
               {tabs.map((tab, index) => (
-                <>
-                  <ListItem button onClick={() => handleNavigation(tab.value)} sx={{}}>
+                <React.Fragment key={index}>
+                  <ListItem button onClick={() => handleNavigation(tab.value)}>
                     <ListItemText primary={tab.label} />
                   </ListItem>
                   {index !== tabs.length - 1 && <Divider />}
-                </>
+                </React.Fragment>
               ))}
             </List>
           </Box>
         </Collapse>
       </AppBar>
-    </>
+    </React.Fragment>
   );
 }
 

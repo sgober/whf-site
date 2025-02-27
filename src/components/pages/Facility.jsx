@@ -1,5 +1,7 @@
+import React from 'react';
+
 function Facility() {
-  return <>Facility Page to go here</>;
+  return <React.Fragment>Facility Page to go here</React.Fragment>;
 }
 
 export default Facility;

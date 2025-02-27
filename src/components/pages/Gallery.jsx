@@ -1,5 +1,7 @@
+import React from 'react';
+
 function Gallery() {
-  return <>Gallery Page to go here</>;
+  return <React.Fragment>Gallery Page to go here</React.Fragment>;
 }
 
 export default Gallery;

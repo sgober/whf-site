@@ -1,5 +1,5 @@
-import { Box, Grid, Typography } from '@mui/material';
 import PropTypes from 'prop-types';
+import { Box, Grid, Typography } from '@mui/material';
 
 function TeamMember(props) {
   const { children, image, name, title } = props;

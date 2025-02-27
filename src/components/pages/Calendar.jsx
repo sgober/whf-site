@@ -1,5 +1,7 @@
+import React from 'react';
+
 function Calendar() {
-  return <>Calendar Page to go here</>;
+  return <React.Fragment>Calendar Page to go here</React.Fragment>;
 }
 
 export default Calendar;
