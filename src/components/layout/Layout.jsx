@@ -8,7 +8,7 @@ function Layout() {
     <>
       <Header />
       <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, overflowY: 'auto' }}>
-        <Box sx={{ flexGrow: 1, maxWidth: 1200, mx: 'auto', p: 2 }}>
+        <Box sx={{ flexGrow: 1, maxWidth: 1200, mx: 'auto', p: 5 }}>
           <Outlet />
         </Box>
         <Footer />
