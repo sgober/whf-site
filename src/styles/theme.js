@@ -185,6 +185,14 @@ const theme = createTheme({
     },
     body2: {
       fontSize: 12
+    },
+    ul: {
+      listStyle: 'disc inside none',
+      paddingRight: 10
+    },
+    ol: {
+      listStyle: 'decimal inside none',
+      paddingRight: 10
     }
   }
 });
