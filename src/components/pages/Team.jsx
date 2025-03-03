@@ -1,7 +1,7 @@
 import { Box, Link, Typography } from '@mui/material';
-import CaseyImage from 'assets/Nick1.png';
-import AbbyImage from 'assets/Nick1.png';
-import ErinImage from 'assets/Nick1.png';
+import AbbyImage from 'assets/abby.jpg';
+import CaseyImage from 'assets/casey.jpg';
+import ErinImage from 'assets/erin.jpg';
 import TeamMember from 'components/util/TeamMember';
 
 function Team() {
