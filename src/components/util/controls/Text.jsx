@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FormControl, FormHelperText, FormLabel, TextField } from '@mui/material';
 import _ from 'lodash';
@@ -8,6 +7,7 @@ function Text(props) {
     controlProps,
     description,
     disabled,
+    errors,
     id,
     inputProps,
     label,
@@ -15,20 +15,10 @@ function Text(props) {
     onChange,
     placeholder,
     required,
-    validate,
-    validationMessage,
     value
   } = props;
-  const empty = required && !_.isUndefined(value) && !value;
-  const [invalid, setInvalid] = useState(false);
-  const error = empty || invalid;
-
-  const onBlur = () => {
-    if (_.isUndefined(value)) {
-      onChange(null, id);
-    }
-    validate && setInvalid(!validate(value));
-  };
+  const error = !_.isUndefined(value) && errors?.length > 0;
+  const errorMessage = errors?.join('. ');
 
   return (
     <FormControl fullWidth {...controlProps}>
@@ -48,7 +38,7 @@ function Text(props) {
         margin="none"
         minRows={multi ? 2 : null}
         multiline={multi}
-        onBlur={onBlur}
+        onBlur={() => _.isUndefined(value) && onChange(null, id)}
         onChange={e => onChange(e.target.value, id)}
         placeholder={placeholder}
         required={required}
@@ -56,8 +46,7 @@ function Text(props) {
         {...inputProps}
       />
       {description && <FormHelperText disabled={disabled}>{description}</FormHelperText>}
-      {empty && <FormHelperText error>This field is required.</FormHelperText>}
-      {invalid && <FormHelperText error>{validationMessage}</FormHelperText>}
+      {error && <FormHelperText error>{errorMessage}</FormHelperText>}
     </FormControl>
   );
 }
@@ -66,6 +55,7 @@ Text.propTypes = {
   controlProps: PropTypes.object,
   description: PropTypes.string,
   disabled: PropTypes.bool,
+  errors: PropTypes.array,
   id: PropTypes.string,
   inputProps: PropTypes.object,
   label: PropTypes.string,
@@ -73,8 +63,6 @@ Text.propTypes = {
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
   required: PropTypes.bool,
-  validate: PropTypes.func,
-  validationMessage: PropTypes.string,
   value: PropTypes.string
 };
 
