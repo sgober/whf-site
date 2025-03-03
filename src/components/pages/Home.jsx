@@ -19,11 +19,11 @@ function Home() {
         </Typography>
       </Box>
       <Divider />
-      <Grid container columns={2} columnSpacing={5} rowSpacing={5}>
-        <Grid item mobile={2} tablet={1}>
+      <Grid container columns={2} columnSpacing={5} rowSpacing={5} sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Grid item laptop="auto" mobile={2} tablet={1}>
           <PhotoLink description="Learn more about the Walnut Hill team" image={OurTeam} link="/team" title="Our Team" />
         </Grid>
-        <Grid item mobile={2} tablet={1}>
+        <Grid item laptop="auto" mobile={2} tablet={1}>
           <PhotoLink
             description="Explore Walnut Hill Farm"
             image={Facility}
