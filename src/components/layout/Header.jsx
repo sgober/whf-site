@@ -12,17 +12,16 @@ import {
   Tab,
   Tabs,
   Toolbar,
-  Typography,
   useMediaQuery
 } from '@mui/material';
 import { useLocation, useNavigate } from 'react-router-dom';
+import Logo from 'assets/logo.png';
 
 function Header() {
   const location = useLocation();
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
-  const isTablet = useMediaQuery(theme => theme.breakpoints.only('tablet'));
 
   const tabs = [
     { label: 'Home', value: '/' },
@@ -41,9 +40,9 @@ function Header() {
   return (
     <React.Fragment>
       <AppBar component="nav" position="sticky">
-        <Toolbar>
-          {/* TODO: change to logo */}
-          <Typography sx={{ flexGrow: 1 }}>Walnut Hill Farm</Typography>
+        <Toolbar sx={{ display: 'flex', flexDirection: isMobile ? 'row' : 'column', justifyContent: 'space-between' }}>
+          {/* TODO: UPDATE WITH LOGO */}
+          <img src={Logo} style={{ maxHeight: 75 }} />
           {isMobile ? (
             <IconButton
               aria-label="menu"
@@ -57,7 +56,7 @@ function Header() {
             // TODO: UPDATE ACTIVE STYLING
             <Tabs onChange={(e, newValue) => navigate(newValue)} value={location.pathname}>
               {tabs.map((tab, index) => (
-                <Tab key={index} label={tab.label} sx={{ ...(isTablet && { fontSize: 12, px: 0.5 }) }} value={tab.value} />
+                <Tab key={index} label={tab.label} value={tab.value} />
               ))}
             </Tabs>
           )}
