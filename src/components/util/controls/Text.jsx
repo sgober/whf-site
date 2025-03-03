@@ -22,13 +22,7 @@ function Text(props) {
 
   return (
     <FormControl fullWidth {...controlProps}>
-      <FormLabel
-        disabled={disabled}
-        error={error}
-        htmlFor={id}
-        required={required}
-        // sx={{ fontWeight: 'bold', pb: 0.25 }}
-      >
+      <FormLabel disabled={disabled} error={error} htmlFor={id} required={required}>
         {label}
       </FormLabel>
       <TextField

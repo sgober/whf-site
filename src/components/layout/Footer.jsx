@@ -6,10 +6,10 @@ function Footer() {
     // TODO: Change color
     <Box sx={{ backgroundColor: 'lightPink', display: 'flex', flexDirection: 'column', alignItems: 'center', p: 1 }}>
       <Box>
-        <IconButton href="https://www.facebook.com/WHFplainville" target="_blank" sx={{px:.5}}>
+        <IconButton href="https://www.facebook.com/WHFplainville" sx={{ px: 0.5 }} target="_blank">
           <Facebook fontSize="large" />
         </IconButton>
-        <IconButton href="https://www.instagram.com/walnuthillfarm2008/" target="_blank" sx={{px:.5}}>
+        <IconButton href="https://www.instagram.com/walnuthillfarm2008/" sx={{ px: 0.5 }} target="_blank">
           <Instagram fontSize="large" />
         </IconButton>
       </Box>

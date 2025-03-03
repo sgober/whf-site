@@ -13,7 +13,7 @@ function Team() {
       <TeamMember image={CaseyImage} name="Cassandra Smith" title="CEO">
         <Typography>
           Casey's bio here. Outside of her farm duties, Cassandra is a Mental Health Counselor with{' '}
-          <Link href="https://walnuthillcounseling.com/" target="_blank" variant="link">
+          <Link href="https://walnuthillcounseling.com/" target="_blank">
             Walnut Hill Counseling
           </Link>
           .

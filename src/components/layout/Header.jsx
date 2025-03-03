@@ -21,7 +21,8 @@ function Header() {
   const location = useLocation();
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
-  const isMobile = useMediaQuery(theme => theme.breakpoints.down('sm')); // TODO: UPDATE THIS?
+  const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
+  const isTablet = useMediaQuery(theme => theme.breakpoints.only('tablet'));
 
   const tabs = [
     { label: 'Home', value: '/' },
@@ -56,7 +57,7 @@ function Header() {
             // TODO: UPDATE ACTIVE STYLING
             <Tabs onChange={(e, newValue) => navigate(newValue)} value={location.pathname}>
               {tabs.map((tab, index) => (
-                <Tab key={index} label={tab.label} value={tab.value} />
+                <Tab key={index} label={tab.label} sx={{ ...(isTablet && { fontSize: 12, px: 0.5 }) }} value={tab.value} />
               ))}
             </Tabs>
           )}

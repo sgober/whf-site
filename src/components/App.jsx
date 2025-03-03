@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from 'components/layout/Layout';
-import Schedule from 'components/pages/Schedule';
 import Contact from 'components/pages/Contact';
 import Facility from 'components/pages/Facility';
 import Gallery from 'components/pages/Gallery';
 import Home from 'components/pages/Home';
+import Schedule from 'components/pages/Schedule';
 import Team from 'components/pages/Team';
 
 function App() {

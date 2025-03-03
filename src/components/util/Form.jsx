@@ -1,20 +1,14 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Box, Button } from '@mui/material';
 import Text from 'components/util/controls/Text';
 import { ajv } from 'utils/ajv';
-import { sendEmail } from 'utils/email';
 import { parseErrors } from 'utils/errors';
 import { getSchema } from 'utils/schema';
 
-function ContactForm() {
+function Form({ formFields, onSubmit }) {
   const [formData, setFormData] = useState({});
-  const formFields = [
-    { id: 'name', label: 'Name', required: true },
-    { id: 'email', label: 'Email', required: true, format: 'email' },
-    { id: 'message', label: 'Message', required: true, multi: true }
-  ];
   const formSchema = getSchema(formFields);
-
   const validate = ajv.compile(formSchema);
   const valid = validate(formData);
 
@@ -24,13 +18,14 @@ function ContactForm() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    sendEmail({ ...formData, callback: () => setFormData({}) });
+    onSubmit(formData, () => setFormData({}));
   };
 
   return (
     <Box component="form" onSubmit={handleSubmit}>
       {formFields.map(field => (
         <Text
+          controlProps={{ sx: { pb: 3 } }}
           errors={parseErrors(validate.errors, field.id, formSchema)}
           id={field.id}
           key={field.id}
@@ -41,11 +36,16 @@ function ContactForm() {
           value={formData[field.id]}
         />
       ))}
-      <Button disabled={!valid} type="submit">
+      <Button fullWidth disabled={!valid} type="submit" variant="text">
         Submit
       </Button>
     </Box>
   );
 }
 
-export default ContactForm;
+Form.propTypes = {
+  formFields: PropTypes.array,
+  onSubmit: PropTypes.func
+};
+
+export default Form;

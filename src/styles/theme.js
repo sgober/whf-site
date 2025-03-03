@@ -4,11 +4,10 @@ import _ from 'lodash';
 const theme = createTheme({
   breakpoints: {
     values: {
-      xs: 0,
-      sm: 600,
-      md: 850,
-      lg: 1250,
-      xl: 1550
+      mobile: 0,
+      tablet: 640,
+      laptop: 1024,
+      desktop: 1200
     }
   },
   components: {
@@ -29,7 +28,14 @@ const theme = createTheme({
     },
     MuiFormControl: {
       defaultProps: {
-        variant: 'standard'
+        variant: 'outlined'
+      }
+    },
+    MuiFormHelperText: {
+      styleOverrides: {
+        root: {
+          marginLeft: 0
+        }
       }
     },
     MuiIconButton: {
@@ -61,7 +67,7 @@ const theme = createTheme({
     },
     MuiTextField: {
       defaultProps: {
-        variant: 'standard'
+        variant: 'outlined'
       }
     },
     MuiTooltip: {
