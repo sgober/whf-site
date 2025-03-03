@@ -27,9 +27,9 @@ function Header() {
     { label: 'Home', value: '/' },
     { label: 'Our Team', value: '/team' },
     { label: 'Facilities', value: '/facilities' },
-    // { label: 'Calendar', value: '/calendar' },
+    { label: 'Schedule', value: '/schedule' },
     { label: 'Gallery', value: '/gallery' },
-    { label: 'Contact', value: '/contact' }
+    { label: 'Contact Us', value: '/contact' }
   ];
 
   const handleNavigation = page => {

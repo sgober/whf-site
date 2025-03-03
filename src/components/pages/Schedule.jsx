@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Calendar() {
+function Schedule() {
   return <React.Fragment>Calendar Page to go here</React.Fragment>;
 }
 
-export default Calendar;
+export default Schedule;

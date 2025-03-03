@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from 'components/layout/Layout';
-import Calendar from 'components/pages/Calendar';
+import Schedule from 'components/pages/Schedule';
 import Contact from 'components/pages/Contact';
 import Facility from 'components/pages/Facility';
 import Gallery from 'components/pages/Gallery';
@@ -15,7 +15,7 @@ function App() {
           <Route index element={<Home />} />
           <Route element={<Team />} path="team" />
           <Route element={<Facility />} path="facilities" />
-          <Route element={<Calendar />} path="calendar" />
+          <Route element={<Schedule />} path="schedule" />
           <Route element={<Gallery />} path="gallery" />
           <Route element={<Contact />} path="contact" />
           <Route element={<Home />} path="*" />
