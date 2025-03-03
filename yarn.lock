@@ -473,15 +473,15 @@
     "@eslint/core" "^0.12.0"
     levn "^0.4.1"
 
-"@fontsource/roboto-condensed@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.npmjs.org/@fontsource/roboto-condensed/-/roboto-condensed-5.1.1.tgz#5368e43b9c92c413002bede023103ae1c5b0ddb7"
-  integrity sha512-0SYkGnWPsvyCI3TAqBYAglfVUqVu/fsdgsyl5u396oK8ZgyamWHdQMFHDqCWrb4H4hNiewJT1l2ShDCA/cu6Ug==
+"@fontsource-variable/open-sans@^5.2.5":
+  version "5.2.5"
+  resolved "https://registry.npmjs.org/@fontsource-variable/open-sans/-/open-sans-5.2.5.tgz#4ee0e5c6af7d1c74fd635bf864e10541661aad79"
+  integrity sha512-++xRfkZAxNP4e1Spm5W11iVcoYfXcNVTV5MDit60t7grRk10hy9C7XQd/jv+0TDFIfHbK9EzyBp3M3CHPesroA==
 
-"@fontsource/roboto@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.npmjs.org/@fontsource/roboto/-/roboto-5.1.1.tgz#64b3f819baf8d3bcfb48c0437ddc7e4118a6ab14"
-  integrity sha512-XwVVXtERDQIM7HPUIbyDe0FP4SRovpjF7zMI8M7pbqFp3ahLJsJTd18h+E6pkar6UbV3btbwkKjYARr5M+SQow==
+"@fontsource/tenor-sans@^5.2.5":
+  version "5.2.5"
+  resolved "https://registry.npmjs.org/@fontsource/tenor-sans/-/tenor-sans-5.2.5.tgz#f12104dc7afe8e54794f269274c9ead3c01b63a0"
+  integrity sha512-DMw9v9jJtba0EruwpCmSTeJ7eQEXjEkQTDZScCslARaJAmzDFvSdH7Bo9IM/YbuacpCibf8npkILVoqffzBrHQ==
 
 "@humanfs/core@^0.19.1":
   version "0.19.1"

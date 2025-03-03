@@ -147,38 +147,47 @@ const theme = createTheme({
   //   white: palette.whiteShade
   // },
   typography: {
-    roboto: 'Roboto',
-    robotoCondensed: 'robotoCondensed',
-    fontFamily: ['Roboto'],
-    // button: {
-    //   fontFamily: 'Barlow Semi Condensed'
-    // },
-    link: {
-      fontFamily: 'Roboto'
+    openSans: 'Open Sans Variable',
+    tenorSans: 'Tenor Sans',
+    fontFamily: ['Open Sans Variable'],
+    button: {
+      fontFamily: 'Tenor Sans'
     },
+    // link: {
+    //   fontFamily: 'Roboto'
+    // },
     h1: {
-      fontSize: 32
+      fontSize: 32,
+      textTransform: 'uppercase',
+      fontFamily: 'Tenor Sans'
     },
     h2: {
-      fontSize: 28
+      fontSize: 28,
+      fontFamily: 'Tenor Sans'
     },
     h3: {
-      fontSize: 24
+      fontSize: 24,
+      fontFamily: 'Tenor Sans'
     },
     h4: {
-      fontSize: 22
+      fontSize: 22,
+      fontFamily: 'Tenor Sans'
     },
     h5: {
-      fontSize: 20
+      fontSize: 20,
+      fontFamily: 'Tenor Sans'
     },
     h6: {
-      fontSize: 18
+      fontSize: 18,
+      fontFamily: 'Tenor Sans'
     },
     subtitle1: {
-      fontSize: 18
+      fontSize: 18,
+      fontFamily: 'Tenor Sans'
     },
     subtitle2: {
-      fontSize: 16
+      fontSize: 16,
+      fontFamily: 'Tenor Sans'
     },
     body1: {
       fontSize: 16
