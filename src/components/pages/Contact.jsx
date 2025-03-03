@@ -1,50 +1,38 @@
 import { useState } from 'react';
-import emailjs from '@emailjs/browser';
-import { Box } from '@mui/material';
-import { toast } from 'react-toastify';
+import { Box, Button } from '@mui/material';
+import Text from 'components/util/controls/Text';
+import { sendEmail } from 'utils/email';
+import { validateEmail } from 'utils/validate';
 
 function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [formData, setFormData] = useState({});
 
-  const sendEmail = e => {
+  const handleChange = (value, id) => {
+    setFormData(prevState => ({ ...prevState, [id]: value }));
+  };
+
+  const handleSubmit = e => {
     e.preventDefault();
-
-    emailjs
-      .send(
-        import.meta.env.VITE_EMAIL_SERVICE_ID,
-        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
-        {
-          from_name: name,
-          from_email: email,
-          message: message,
-          reply_to: email
-        },
-        import.meta.env.VITE_EMAIL_PUBLIC_KEY
-      )
-      .then(
-        () => toast.success('Contact request successfully sent.'), // clear form on success
-        error => toast.error(error.text)
-      );
+    sendEmail({ ...formData, callback: () => setFormData({}) });
   };
 
   return (
-    <form onSubmit={sendEmail}>
-      <div>
-        <label htmlFor="name">Name:</label>
-        <input required id="name" onChange={e => setName(e.target.value)} type="text" value={name} />
-      </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input required id="email" onChange={e => setEmail(e.target.value)} type="email" value={email} />
-      </div>
-      <div>
-        <label htmlFor="message">Message:</label>
-        <textarea required id="message" onChange={e => setMessage(e.target.value)} value={message} />
-      </div>
-      <button type="submit">Send</button>
-    </form>
+    <Box component="form" onSubmit={handleSubmit}>
+      <Text id="name" label="Name" onChange={handleChange} required={true} value={formData.name} />
+      <Text
+        id="email"
+        label="Email"
+        onChange={handleChange}
+        required={true}
+        validate={validateEmail}
+        validationMessage="Must be a valid email."
+        value={formData.email}
+      />
+      <Text id="message" label="Message" multi={true} onChange={handleChange} required={true} value={formData.message} />
+      <Button disabled={!formData.name || !formData.email || !formData.message} type="submit">
+        Submit
+      </Button>
+    </Box>
   );
 }
 
