@@ -6,7 +6,7 @@ import TeamMember from 'components/util/TeamMember';
 
 function Team() {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
       <Typography sx={{ textAlign: 'center' }} variant="h1">
         Our Team
       </Typography>

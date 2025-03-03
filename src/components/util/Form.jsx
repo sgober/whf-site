@@ -6,7 +6,7 @@ import { ajv } from 'utils/ajv';
 import { parseErrors } from 'utils/errors';
 import { getSchema } from 'utils/schema';
 
-function Form({ formFields, onSubmit }) {
+function Form({ formFields, onSubmit, styles }) {
   const [formData, setFormData] = useState({});
   const formSchema = getSchema(formFields);
   const validate = ajv.compile(formSchema);
@@ -22,7 +22,7 @@ function Form({ formFields, onSubmit }) {
   };
 
   return (
-    <Box component="form" onSubmit={handleSubmit}>
+    <Box component="form" onSubmit={handleSubmit} sx={styles}>
       {formFields.map(field => (
         <Text
           controlProps={{ sx: { pb: 3 } }}
@@ -45,7 +45,8 @@ function Form({ formFields, onSubmit }) {
 
 Form.propTypes = {
   formFields: PropTypes.array,
-  onSubmit: PropTypes.func
+  onSubmit: PropTypes.func,
+  styles: PropTypes.object
 };
 
 export default Form;
