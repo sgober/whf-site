@@ -7,6 +7,7 @@ function Contact() {
   const formFields = [
     { id: 'name', label: 'Name', required: true },
     { id: 'email', label: 'Email', required: true, format: 'email' },
+    { id: 'subject', label: 'Subject', required: true },
     { id: 'message', label: 'Message', required: true, multi: true }
   ];
   const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));

@@ -30,7 +30,7 @@ function Text(props) {
         error={error}
         id={id}
         margin="none"
-        minRows={multi ? 2 : null}
+        minRows={multi ? 3 : null}
         multiline={multi}
         onBlur={() => _.isUndefined(value) && onChange(null, id)}
         onChange={e => onChange(e.target.value, id)}

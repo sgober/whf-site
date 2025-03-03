@@ -1,7 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 
-const sendEmail = ({ name, email, message, callback }) => {
+const sendEmail = ({ name, email, subject, message, callback }) => {
   emailjs
     .send(
       import.meta.env.VITE_EMAIL_SERVICE_ID,
@@ -10,7 +10,8 @@ const sendEmail = ({ name, email, message, callback }) => {
         from_name: name,
         from_email: email,
         message: message,
-        reply_to: email
+        reply_to: email,
+        subject: subject
       },
       import.meta.env.VITE_EMAIL_PUBLIC_KEY
     )
