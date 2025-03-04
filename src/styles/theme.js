@@ -1,5 +1,6 @@
 import { createTheme } from '@mui/material';
 import _ from 'lodash';
+import palette from 'styles/variables.module.scss';
 
 const theme = createTheme({
   breakpoints: {
@@ -86,88 +87,30 @@ const theme = createTheme({
       }
     }
   },
-  // TODO: add palette
-  // palette: {
-  //   primary: {
-  //     main: palette.primaryMain,
-  //     light: palette.primaryLight,
-  //     dark: palette.primaryDark,
-  //     background: palette.primaryBackground
-  //   },
-  //   secondary: {
-  //     main: palette.secondaryMain,
-  //     light: palette.secondaryLight,
-  //     dark: palette.secondaryDark,
-  //     background: palette.secondaryBackground
-  //   },
-  //   error: {
-  //     main: palette.errorMain,
-  //     light: palette.errorLight,
-  //     dark: palette.errorDark,
-  //     background: palette.errorBackground
-  //     // contrastText: palette.errorContrast
-  //   },
-  //   warning: {
-  //     main: palette.warningMain,
-  //     light: palette.warningLight,
-  //     dark: palette.warningDark,
-  //     background: palette.warningBackground
-  //     // contrastText: palette.warningContrast
-  //   },
-  //   success: {
-  //     main: palette.successMain,
-  //     light: palette.successLight,
-  //     dark: palette.successDark,
-  //     background: palette.successBackground
-  //     // contrastText: palette.successContrast
-  //   },
-  //   dark: {
-  //     main: palette.primaryDark,
-  //     contrastText: palette.primaryBackground
-  //   },
-  //   light: {
-  //     main: palette.primaryLight,
-  //     contrastText: palette.primaryBackground
-  //   },
-  //   info: {
-  //     main: palette.infoMain,
-  //     light: palette.infoLight,
-  //     dark: palette.infoDark,
-  //     background: palette.infoBackground
-  //     // contrastText: palette.infoContrast
-  //   },
-  //   input: {
-  //     main: palette.inputMain,
-  //     border: palette.inputBorder,
-  //     disabled: palette.disabled
-  //   },
-  //   table: {
-  //     hover: palette.tableHover
-  //   },
-  //   text: {
-  //     main: palette.textMain,
-  //     secondary: palette.textSecondary,
-  //     disabled: palette.disabled
-  //   },
-  //   black: palette.blackShade,
-  //   white: palette.whiteShade
-  // },
+  palette: {
+    primary: { main: palette.primaryMain },
+    secondary: { main: palette.secondaryMain },
+    error: { main: palette.errorMain },
+    warning: { main: palette.warningMain },
+    success: { main: palette.successMain },
+    info: { main: palette.infoMain },
+    dark: { main: palette.darkMain },
+    light: { main: palette.lightMain }
+  },
   typography: {
+    allVariants: { color: palette.textMain },
     openSans: 'Open Sans Variable',
     tenorSans: 'Tenor Sans',
     fontFamily: ['Open Sans Variable'],
-    button: {
-      fontFamily: 'Tenor Sans'
-    },
-    // link: {
-    //   fontFamily: 'Roboto'
-    // },
+    button: { fontFamily: 'Tenor Sans' },
     h1: {
+      color: palette.primaryMain,
       fontSize: 32,
       textTransform: 'uppercase',
       fontFamily: 'Tenor Sans'
     },
     h2: {
+      color: palette.successMain,
       fontSize: 28,
       fontFamily: 'Tenor Sans'
     },

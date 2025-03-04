@@ -1,0 +1,21 @@
+$primary-main: #7b0828;
+$secondary-main: #cdcdcd;
+$success-main: #0b6e53;
+$error-main: #a63d40;
+$warning-main: #e3a54f;
+$info-main: #677db7;
+$dark-main: #3d405b;
+$light-main: #fbf5f3;
+$text-main: #0d1321;
+
+$theme-colors: (
+  primaryMain: $primary-main,
+  secondaryMain: $secondary-main,
+  successMain: $success-main,
+  errorMain: $error-main,
+  warningMain: $warning-main,
+  infoMain: $info-main,
+  darkMain: $dark-main,
+  lightMain: $light-main,
+  textMain: $text-main
+);

@@ -1,8 +1,10 @@
-import { Box, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Box, Link, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import FacilityImage from 'assets/facility.jpg';
 
 function Facility() {
+  const navigate = useNavigate();
+
   const facilityList = [
     '200 x 80 indoor with GGT footing and full jump course',
     '200 x 220 outdoor ring with GGT footing and timed irrigation system',
@@ -80,8 +82,8 @@ function Facility() {
         </Typography>
       </Box>
       <Typography>
-        Please <Link to="/contact">contact us</Link> for pricing or to learn more about the opportunities available at Walnut
-        Hill Farm for boarding and training services.
+        Please <Link onClick={() => navigate('/contact')}>contact us</Link> for pricing or to learn more about the
+        opportunities available at Walnut Hill Farm for boarding and training services.
       </Typography>
     </Box>
   );

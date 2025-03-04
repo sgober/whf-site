@@ -1,0 +1,10 @@
+@use 'palette' as *;
+
+// Overwrite default react-toastify colors with colors from theme
+:root {
+  --toastify-color-info: #{$info-main};
+  --toastify-color-success: #{$success-main};
+  --toastify-color-warning: #{$warning-main};
+  --toastify-color-error: #{$error-main};
+  --toastify-text-color-light: #{$text-main};
+}

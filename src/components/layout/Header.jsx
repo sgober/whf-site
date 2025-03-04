@@ -39,7 +39,7 @@ function Header() {
 
   return (
     <React.Fragment>
-      <AppBar component="nav" position="sticky">
+      <AppBar color="secondary" component="nav" position="sticky">
         <Toolbar sx={{ display: 'flex', flexDirection: isMobile ? 'row' : 'column', justifyContent: 'space-between' }}>
           {/* TODO: UPDATE WITH LOGO */}
           <img src={Logo} style={{ maxHeight: 75 }} />
@@ -56,7 +56,7 @@ function Header() {
             // TODO: UPDATE ACTIVE STYLING
             <Tabs onChange={(e, newValue) => navigate(newValue)} value={location.pathname}>
               {tabs.map((tab, index) => (
-                <Tab key={index} label={tab.label} value={tab.value} sx={{ fontSize: 16 }} />
+                <Tab key={index} label={tab.label} sx={{ fontSize: 16 }} value={tab.value} />
               ))}
             </Tabs>
           )}

@@ -4,10 +4,10 @@ import CalendarItem from 'components/util/CalendarItem';
 
 function Schedule() {
   const typeKey = {
-    HJ: { label: 'Hunter/Jumper', color: 'secondary' },
+    HJ: { label: 'Hunter/Jumper', color: 'success' },
     EV: { label: 'Eventing', color: 'error' },
-    DR: { label: 'Dressage', color: 'success' },
-    CL: { label: 'Clinic @ WHF', color: 'warning' }
+    DR: { label: 'Dressage', color: 'warning' },
+    CL: { label: 'Clinic @ WHF', color: 'info' }
   };
 
   return (

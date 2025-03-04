@@ -1,0 +1,8 @@
+@use 'palette' as *;
+@use 'sass:string';
+
+:export {
+  @each $color, $value in $theme-colors {
+    #{string.unquote($color)}: $value;
+  }
+}
