@@ -35,6 +35,10 @@ Merge the lastest `dev` branch into the `prod` branch and netlify will take care
 
 Currently deploys on [netlify](https://lucky-fairy-4801fb.netlify.app/)
 
+## Email Setup
+
+This site uses [EmailJS](https://www.emailjs.com/) to handle sending emails from the contact page, eliminating the need for a backend server. To set this up locally, create a file named `.env` in the root of the project with the contents of `.env_sample` that has the three service id/keys required to use email.js.  To hook this up on the deployed version, set the env variables through netlify (site configuration -> environment variables).
+
 ## Formatters
 
 NGD Frontend uses [ESLint](https://eslint.org/) (a linter for code quality rules) and [Prettier](https://prettier.io/) (a code formatter that styles all the code in the same way). To run:
