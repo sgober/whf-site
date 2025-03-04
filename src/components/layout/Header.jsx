@@ -27,7 +27,7 @@ function Header() {
     { label: 'Home', value: '/' },
     { label: 'Our Team', value: '/team' },
     { label: 'Facilities', value: '/facilities' },
-    { label: 'Schedule', value: '/schedule' },
+    { label: 'Calendar', value: '/calendar' },
     { label: 'Gallery', value: '/gallery' },
     { label: 'Contact Us', value: '/contact' }
   ];

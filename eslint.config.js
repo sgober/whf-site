@@ -23,7 +23,7 @@ export default [
       react: { version: '18.3' },
       'import/resolver': {
         node: {
-          extensions: ['.js', '.jsx'],
+          extensions: ['.js', '.jsx', '.json'],
           moduleDirectory: ['src', 'node_modules']
         }
       }
