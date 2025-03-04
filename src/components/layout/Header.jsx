@@ -41,7 +41,7 @@ function Header() {
     <React.Fragment>
       <AppBar color="secondary" component="nav" position="sticky">
         <Toolbar sx={{ display: 'flex', flexDirection: isMobile ? 'row' : 'column', justifyContent: 'space-between' }}>
-          {/* TODO: UPDATE WITH LOGO */}
+          {/* TODO: UPDATE LOGO */}
           <img src={Logo} style={{ maxHeight: 75 }} />
           {isMobile ? (
             <IconButton
@@ -53,7 +53,6 @@ function Header() {
               <Menu />
             </IconButton>
           ) : (
-            // TODO: UPDATE ACTIVE STYLING
             <Tabs onChange={(e, newValue) => navigate(newValue)} value={location.pathname}>
               {tabs.map((tab, index) => (
                 <Tab key={index} label={tab.label} sx={{ fontSize: 16 }} value={tab.value} />
@@ -63,7 +62,6 @@ function Header() {
         </Toolbar>
         <Collapse in={menuOpen} orientation="vertical">
           <Box sx={{ backgroundColor: 'white', color: 'text.primary' }}>
-            {/* TODO: UPDATE THIS STYLING */}
             <List dense sx={{ py: 0 }}>
               {tabs.map((tab, index) => (
                 <React.Fragment key={index}>
