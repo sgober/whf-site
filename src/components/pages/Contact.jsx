@@ -33,8 +33,7 @@ function Contact() {
             <Typography textAlign="center" variant="subtitle1">
               We look forward to hearing from you!
             </Typography>
-            {/* TODO add phone number */}
-            {renderContactIcon(Phone, '000 000-0000')}
+            {renderContactIcon(Phone, '(508) 733-0691', 'tel:5087330691')}
             {renderContactIcon(Email, 'walnuthillfarm2008@gmail.com', 'mailto:walnuthillfarm2008@gmail.com')}
             {renderContactIcon(
               LocationOn,
