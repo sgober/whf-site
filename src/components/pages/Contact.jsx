@@ -41,10 +41,12 @@ function Contact() {
               '86 Walnut St, Plainville, MA 02762',
               'https://www.google.com/maps/place/Walnut+Hill+Farm/@42.0099608,-71.3600764,17z/data=!3m1!4b1!4m6!3m5!1s0x89e46708c0557967:0x608d61f1e56a3996!8m2!3d42.0099608!4d-71.3575015!16s%2Fg%2F1tjbt5lj?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D'
             )}
-            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <SocialLinks color="primary" />
-              <Typography>Stay in touch with us!</Typography>
-            </Box>
+            {!isMobile && (
+              <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <SocialLinks color="primary" />
+                <Typography>Stay in touch with us!</Typography>
+              </Box>
+            )}
           </Box>
         </Grid>
         <Grid item laptop={1} mobile={2} order={{ mobile: 1, laptop: 2 }}>
