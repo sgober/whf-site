@@ -56,7 +56,7 @@ function Header() {
             // TODO: UPDATE ACTIVE STYLING
             <Tabs onChange={(e, newValue) => navigate(newValue)} value={location.pathname}>
               {tabs.map((tab, index) => (
-                <Tab key={index} label={tab.label} value={tab.value} />
+                <Tab key={index} label={tab.label} value={tab.value} sx={{ fontSize: 16 }} />
               ))}
             </Tabs>
           )}
