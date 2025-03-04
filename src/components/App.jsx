@@ -6,10 +6,12 @@ import Facility from 'components/pages/Facility';
 import Gallery from 'components/pages/Gallery';
 import Home from 'components/pages/Home';
 import Team from 'components/pages/Team';
+import ScrollToTop from 'components/util/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />} path="/">
           <Route index element={<Home />} />

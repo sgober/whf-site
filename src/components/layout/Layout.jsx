@@ -9,7 +9,7 @@ function Layout() {
   return (
     <React.Fragment>
       <Header />
-      <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, overflowY: 'auto' }}>
+      <Box id="body" sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, overflowY: 'auto' }}>
         <Box sx={{ flexGrow: 1, maxWidth: 1200, mx: 'auto', p: 5 }}>
           <Outlet />
         </Box>
