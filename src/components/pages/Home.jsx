@@ -23,7 +23,9 @@ function Home({ classes }) {
           </Box>
         ))}
       </Slider>
-      <Box className={classes} sx={{ display: 'flex', flexDirection: 'column', gap: 8, mt: isMobile ? 2 : 1 }}>
+      <Box
+        className={classes}
+        sx={{ display: 'flex', flexDirection: 'column', gap: isMobile ? 5 : 8, mt: isMobile ? 2 : 1 }}>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
           <Typography textAlign="center" variant="h1">
             Welcome to Walnut Hill Farm!

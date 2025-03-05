@@ -16,19 +16,21 @@ function Calendar({ classes }) {
       <Typography textAlign="center" variant="h1">
         2025 Calendar
       </Typography>
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-        {events.map((event, index) => (
-          <CalendarItem {...event} color={typeKey[event.type]?.color} key={index} />
-        ))}
-      </Box>
-      <Box sx={{ display: 'flex', gap: 2 }}>
-        <Typography variant="subtitle1">Key:</Typography>
-        <Box>
-          {Object.values(typeKey).map((value, index) => (
-            <Typography color={value.color} key={index} variant="subtitle1">
-              {value.label}
-            </Typography>
+      <Box sx={{ display: 'flex', flexDirection: 'column', alignSelf: 'center', gap: 5, width: 'fit-content' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+          {events.map((event, index) => (
+            <CalendarItem {...event} color={typeKey[event.type]?.color} key={index} />
           ))}
+        </Box>
+        <Box sx={{ display: 'flex', gap: 2 }}>
+          <Typography variant="subtitle1">Key:</Typography>
+          <Box>
+            {Object.values(typeKey).map((value, index) => (
+              <Typography color={value.color} key={index} variant="subtitle1">
+                {value.label}
+              </Typography>
+            ))}
+          </Box>
         </Box>
       </Box>
     </Box>
