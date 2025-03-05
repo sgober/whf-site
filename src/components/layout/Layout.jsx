@@ -1,22 +1,19 @@
 import React from 'react';
-import { Box, useMediaQuery } from '@mui/material';
+import { Box } from '@mui/material';
 import { Outlet } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
 import Footer from 'components/layout/Footer';
 import Header from 'components/layout/Header';
 
 function Layout() {
-  const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
   return (
     <React.Fragment>
       <Header />
-      <Box id="body" sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, overflowY: 'auto' }}>
-        <Box sx={{ flexGrow: 1, maxWidth: 1200, mx: 'auto', px: isMobile ? 4 : 7, py: isMobile ? 5 : 8 }}>
+      <Box id="body" sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, overflowY: 'auto', width: '100%' }}>
+        <Box sx={{ alignSelf: 'center', flexGrow: 1, maxWidth: 1200, width: '100%' }}>
           <Outlet />
         </Box>
         <Footer />
       </Box>
-      <ToastContainer closeOnClick draggable pauseOnHover pauseOnVisibilityChange autoClose={2000} position="bottom-left" />
     </React.Fragment>
   );
 }

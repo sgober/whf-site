@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import { Email, LocationOn, Phone } from '@mui/icons-material';
 import { Box, Grid, IconButton, Typography, useMediaQuery } from '@mui/material';
 import Form from 'components/util/Form';
 import SocialLinks from 'components/util/SocialLinks';
 import { sendEmail } from 'utils/email';
 
-function Contact() {
+function Contact({ classes }) {
   const formFields = [
     { id: 'name', label: 'Name', required: true },
     { id: 'email', label: 'Email', required: true, format: 'email' },
@@ -23,7 +24,7 @@ function Contact() {
   );
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 5, alignItems: 'center' }}>
+    <Box className={classes} sx={{ display: 'flex', flexDirection: 'column', gap: 5, alignItems: 'center' }}>
       <Typography textAlign="center" variant="h1">
         Get in touch today
       </Typography>
@@ -59,5 +60,9 @@ function Contact() {
     </Box>
   );
 }
+
+Contact.propTypes = {
+  classes: PropTypes.string
+};
 
 export default Contact;

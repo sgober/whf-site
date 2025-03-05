@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import { Box, Typography } from '@mui/material';
 import events from 'assets/locales/calendar';
 import CalendarItem from 'components/util/CalendarItem';
 
-function Calendar() {
+function Calendar({ classes }) {
   const typeKey = {
     HJ: { label: 'Hunter/Jumper', color: 'success' },
     EV: { label: 'Eventing', color: 'error' },
@@ -11,7 +12,7 @@ function Calendar() {
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+    <Box className={classes} sx={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
       <Typography textAlign="center" variant="h1">
         2025 Calendar
       </Typography>
@@ -33,5 +34,9 @@ function Calendar() {
     </Box>
   );
 }
+
+Calendar.propTypes = {
+  classes: PropTypes.string
+};
 
 export default Calendar;

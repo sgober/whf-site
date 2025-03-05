@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import { Box, Link, Typography } from '@mui/material';
 import AbbyImage from 'assets/images/abby.jpg';
 import CaseyImage from 'assets/images/casey.jpg';
 import ErinImage from 'assets/images/erin.jpg';
 import TeamMember from 'components/util/TeamMember';
 
-function Team() {
+function Team({ classes }) {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+    <Box className={classes} sx={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
       <Typography sx={{ textAlign: 'center' }} variant="h1">
         Our Team
       </Typography>
@@ -33,5 +34,9 @@ function Team() {
     </Box>
   );
 }
+
+Team.propTypes = {
+  classes: PropTypes.string
+};
 
 export default Team;

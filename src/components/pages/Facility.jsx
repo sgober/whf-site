@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import { Box, Link, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import FacilityImage from 'assets/images/facility.jpg';
 
-function Facility() {
+function Facility({ classes }) {
   const navigate = useNavigate();
 
   const facilityList = [
@@ -41,7 +42,7 @@ function Facility() {
   ];
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+    <Box className={classes} sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
       <Typography sx={{ textAlign: 'center' }} variant="h1">
         Facility & Services
       </Typography>
@@ -88,5 +89,9 @@ function Facility() {
     </Box>
   );
 }
+
+Facility.propTypes = {
+  classes: PropTypes.string
+};
 
 export default Facility;

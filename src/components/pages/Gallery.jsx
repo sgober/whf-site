@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Box, ButtonBase, Grid, useMediaQuery } from '@mui/material';
 import _ from 'lodash';
 import { Lightbox } from 'yet-another-react-lightbox';
 
-function Gallery() {
+function Gallery({ classes }) {
   const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
   const isTablet = useMediaQuery(theme => theme.breakpoints.only('tablet'));
   const images = import.meta.glob('/public/images/*');
@@ -13,7 +14,7 @@ function Gallery() {
   const [selectedImageIndex, setSelectedImageIndex] = useState();
 
   return (
-    <React.Fragment>
+    <Box className={classes}>
       <Grid container columns={4} columnSpacing={1}>
         {imageGroups.map((imageGroup, gIndex) => (
           <Grid item key={gIndex} laptop={1} mobile={4} tablet={2}>
@@ -33,8 +34,12 @@ function Gallery() {
         open={!_.isNil(selectedImageIndex)}
         slides={imageArray}
       />
-    </React.Fragment>
+    </Box>
   );
 }
+
+Gallery.propTypes = {
+  classes: PropTypes.string
+};
 
 export default Gallery;
