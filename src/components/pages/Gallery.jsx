@@ -6,7 +6,7 @@ import { Lightbox } from 'yet-another-react-lightbox';
 function Gallery() {
   const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
   const isTablet = useMediaQuery(theme => theme.breakpoints.only('tablet'));
-  const images = import.meta.glob('/src/assets/images/gallery/*');
+  const images = import.meta.glob('/public/images/gallery/*');
   const imageArray = Object.keys(images).map((image, index) => ({ src: image, index }));
   const chunkSize = Math.ceil(_.divide(imageArray.length, isMobile ? 1 : isTablet ? 2 : 4));
   const imageGroups = _.chunk(imageArray, chunkSize);
