@@ -13,12 +13,12 @@ function Home({ classes }) {
 
   return (
     <React.Fragment>
-      <Slider arrows={false} autoplay={true} dots={true} infinite={true}>
+      <Slider arrows={false} autoplay={true} autoplaySpeed={5000} dots={true} infinite={true}>
         {slides.map((slide, index) => (
           <Box key={index}>
             <img
               src={slide.src}
-              style={{ height: isMobile ? 250 : 500, width: '100%', objectFit: 'cover', ...slide.styles }}
+              style={{ height: isMobile ? 250 : 600, width: '100%', objectFit: 'cover', ...slide.styles }}
             />
           </Box>
         ))}
