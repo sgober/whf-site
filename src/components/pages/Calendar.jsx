@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import events from 'assets/locales/calendar';
 import CalendarItem from 'components/util/CalendarItem';
 
-function Schedule() {
+function Calendar() {
   const typeKey = {
     HJ: { label: 'Hunter/Jumper', color: 'success' },
     EV: { label: 'Eventing', color: 'error' },
@@ -34,4 +34,4 @@ function Schedule() {
   );
 }
 
-export default Schedule;
+export default Calendar;
