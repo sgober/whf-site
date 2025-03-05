@@ -34,8 +34,10 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.2.0",
+    "react-slick": "^0.30.3",
     "react-toastify": "^11.0.5",
     "sass": "^1.85.1",
+    "slick-carousel": "^1.8.1",
     "vite-jsconfig-paths": "^2.0.1",
     "yet-another-react-lightbox": "^3.21.7"
   },

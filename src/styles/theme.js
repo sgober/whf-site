@@ -1,14 +1,14 @@
 import { createTheme } from '@mui/material';
 import _ from 'lodash';
-import palette from 'styles/variables.module.scss';
+import variables from 'styles/variables.module.scss';
 
 const theme = createTheme({
   breakpoints: {
     values: {
-      mobile: 0,
-      tablet: 640,
-      laptop: 1024,
-      desktop: 1200
+      mobile: _.toNumber(variables.mobile),
+      tablet: _.toNumber(variables.tablet),
+      laptop: _.toNumber(variables.laptop),
+      desktop: _.toNumber(variables.desktop)
     }
   },
   components: {
@@ -88,29 +88,29 @@ const theme = createTheme({
     }
   },
   palette: {
-    primary: { main: palette.primaryMain },
-    secondary: { main: palette.secondaryMain },
-    error: { main: palette.errorMain },
-    warning: { main: palette.warningMain },
-    success: { main: palette.successMain },
-    info: { main: palette.infoMain },
-    dark: { main: palette.darkMain },
-    light: { main: palette.lightMain }
+    primary: { main: variables.primaryMain },
+    secondary: { main: variables.secondaryMain },
+    error: { main: variables.errorMain },
+    warning: { main: variables.warningMain },
+    success: { main: variables.successMain },
+    info: { main: variables.infoMain },
+    dark: { main: variables.darkMain },
+    light: { main: variables.lightMain }
   },
   typography: {
-    allVariants: { color: palette.textMain },
+    allVariants: { color: variables.textMain },
     openSans: 'Open Sans Variable',
     tenorSans: 'Tenor Sans',
     fontFamily: ['Open Sans Variable'],
     button: { fontFamily: 'Tenor Sans' },
     h1: {
-      color: palette.primaryMain,
+      color: variables.primaryMain,
       fontSize: 32,
       textTransform: 'uppercase',
       fontFamily: 'Tenor Sans'
     },
     h2: {
-      color: palette.successMain,
+      color: variables.successMain,
       fontSize: 28,
       fontFamily: 'Tenor Sans'
     },

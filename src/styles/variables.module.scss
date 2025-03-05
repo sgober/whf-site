@@ -1,8 +1,12 @@
 @use 'palette' as *;
+@use 'breakpoints' as *;
 @use 'sass:string';
 
 :export {
   @each $color, $value in $theme-colors {
     #{string.unquote($color)}: $value;
+  }
+  @each $breakpoint, $value in $breakpoints {
+    #{string.unquote($breakpoint)}: $value;
   }
 }
