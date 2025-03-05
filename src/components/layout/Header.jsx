@@ -15,7 +15,7 @@ import {
   useMediaQuery
 } from '@mui/material';
 import { useLocation, useNavigate } from 'react-router-dom';
-import Logo from 'assets/media/logo.png';
+import Logo from 'assets/images/logo.png';
 
 function Header() {
   const location = useLocation();

@@ -1,6 +1,6 @@
 import { Box, Divider, Grid, Typography } from '@mui/material';
-import Facility from 'assets/media/facility2.jpg';
-import OurTeam from 'assets/media/our_team.png';
+import Facility from 'assets/images/facility2.jpg';
+import OurTeam from 'assets/images/our_team.png';
 import PhotoLink from 'components/util/PhotoLink';
 
 function Home() {
