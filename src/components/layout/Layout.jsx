@@ -9,7 +9,7 @@ function Layout() {
     <React.Fragment>
       <Header />
       <Box id="body" sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, overflowY: 'auto', width: '100%' }}>
-        <Box sx={{ alignSelf: 'center', flexGrow: 1, maxWidth: 1200, width: '100%' }}>
+        <Box sx={{ alignSelf: 'center', flexGrow: 1, width: '100%' }}>
           <Outlet />
         </Box>
         <Footer />
