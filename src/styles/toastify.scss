@@ -2,9 +2,9 @@
 
 // Overwrite default react-toastify colors with colors from theme
 :root {
-  --toastify-color-info: #{$info-main};
-  --toastify-color-success: #{$success-main};
-  --toastify-color-warning: #{$warning-main};
-  --toastify-color-error: #{$error-main};
-  --toastify-text-color-light: #{$text-main};
+  --toastify-color-info: #{$info};
+  --toastify-color-success: #{$success};
+  --toastify-color-warning: #{$warning};
+  --toastify-color-error: #{$error};
+  --toastify-text-color-light: #{$text};
 }

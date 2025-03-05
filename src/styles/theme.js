@@ -88,29 +88,29 @@ const theme = createTheme({
     }
   },
   palette: {
-    primary: { main: variables.primaryMain },
-    secondary: { main: variables.secondaryMain },
-    error: { main: variables.errorMain },
-    warning: { main: variables.warningMain },
-    success: { main: variables.successMain },
-    info: { main: variables.infoMain },
-    dark: { main: variables.darkMain },
-    light: { main: variables.lightMain }
+    primary: { main: variables.primary },
+    secondary: { main: variables.secondary },
+    error: { main: variables.error },
+    warning: { main: variables.warning },
+    success: { main: variables.success },
+    info: { main: variables.info },
+    dark: { main: variables.dark },
+    light: { main: variables.light }
   },
   typography: {
-    allVariants: { color: variables.textMain },
+    allVariants: { color: variables.text },
     openSans: 'Open Sans Variable',
     tenorSans: 'Tenor Sans',
     fontFamily: ['Open Sans Variable'],
     button: { fontFamily: 'Tenor Sans' },
     h1: {
-      color: variables.primaryMain,
+      color: variables.primary,
       fontSize: 32,
       textTransform: 'uppercase',
       fontFamily: 'Tenor Sans'
     },
     h2: {
-      color: variables.successMain,
+      color: variables.success,
       fontSize: 28,
       fontFamily: 'Tenor Sans'
     },
