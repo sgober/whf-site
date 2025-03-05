@@ -1,6 +1,6 @@
 import { Box, Link, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import FacilityImage from 'assets/facility.jpg';
+import FacilityImage from 'assets/media/facility.jpg';
 
 function Facility() {
   const navigate = useNavigate();
