@@ -13,17 +13,20 @@ export default function ScrollToTop() {
     threshold: 100
   });
 
-  const scrollToTop = transition => {
-    if (isMobile) {
-      window.scrollTo({ top: 0, left: 0, behavior: transition ? 'smooth' : 'instant' });
-    } else {
-      document.getElementById('body').scrollTop = 0;
-    }
-  };
+  const scrollToTop = useCallback(
+    transition => {
+      if (isMobile) {
+        window.scrollTo({ top: 0, left: 0, behavior: transition ? 'smooth' : 'instant' });
+      } else {
+        document.getElementById('body').scrollTop = 0;
+      }
+    },
+    [isMobile]
+  );
 
   useEffect(() => {
     scrollToTop();
-  }, [pathname]);
+  }, [pathname, scrollToTop]);
 
   return (
     isMobile && (
