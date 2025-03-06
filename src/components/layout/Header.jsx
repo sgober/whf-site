@@ -22,6 +22,7 @@ function Header() {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
+  const isTablet = useMediaQuery(theme => theme.breakpoints.only('tablet'));
 
   const tabs = [
     { label: 'Home', value: '/' },
@@ -55,7 +56,12 @@ function Header() {
           ) : (
             <Tabs onChange={(e, newValue) => navigate(newValue)} value={location.pathname}>
               {tabs.map((tab, index) => (
-                <Tab key={index} label={tab.label} sx={{ fontSize: 16 }} value={tab.value} />
+                <Tab
+                  key={index}
+                  label={tab.label}
+                  sx={{ fontSize: isTablet ? 14 : 16, px: isTablet ? 1 : 2 }}
+                  value={tab.value}
+                />
               ))}
             </Tabs>
           )}
