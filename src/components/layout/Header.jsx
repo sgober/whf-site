@@ -39,7 +39,7 @@ function Header() {
 
   return (
     <React.Fragment>
-      <AppBar color="secondary" component="nav" position="sticky">
+      <AppBar color="secondary" component="header" position="sticky">
         <Toolbar sx={{ display: 'flex', flexDirection: isMobile ? 'row' : 'column', justifyContent: 'space-between' }}>
           {/* TODO: UPDATE LOGO */}
           <img src={Logo} style={{ maxHeight: 75 }} />
