@@ -28,8 +28,8 @@ export default function ScrollToTop() {
   return (
     isMobile && (
       <Fade in={trigger}>
-        <Box onClick={scrollToTop} role="presentation" sx={{ position: 'fixed', bottom: 16, right: 16 }}>
-          <Fab aria-label="scroll back to top" size="small">
+        <Box onClick={scrollToTop} role="presentation" sx={{ position: 'fixed', bottom: 25, right: 25 }}>
+          <Fab aria-label="scroll back to top" size="medium">
             <KeyboardArrowUp />
           </Fab>
         </Box>
