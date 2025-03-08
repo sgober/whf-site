@@ -24,7 +24,9 @@ function Contact({ classes }) {
   );
 
   return (
-    <Box className={classes} sx={{ display: 'flex', flexDirection: 'column', gap: 5, alignItems: 'center' }}>
+    <Box
+      className={classes}
+      sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, gap: 5, alignItems: 'center', justifyContent: 'center' }}>
       <Typography textAlign="center" variant="h1">
         Get in touch today
       </Typography>

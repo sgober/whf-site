@@ -11,7 +11,7 @@ function Layout() {
     <React.Fragment>
       <Header />
       <Box id="body" sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, overflowY: isMobile ? 'unset' : 'auto' }}>
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
           <Outlet />
         </Box>
         <Footer />
