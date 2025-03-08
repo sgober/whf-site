@@ -3,6 +3,7 @@ import { Menu } from '@mui/icons-material';
 import {
   AppBar,
   Box,
+  ButtonBase,
   Collapse,
   Divider,
   IconButton,
@@ -43,7 +44,9 @@ function Header() {
       <AppBar color="secondary" component="header" position="sticky">
         <Toolbar sx={{ display: 'flex', flexDirection: isMobile ? 'row' : 'column', justifyContent: 'space-between' }}>
           {/* TODO: UPDATE LOGO */}
-          <img src={Logo} style={{ maxHeight: 75 }} />
+          <ButtonBase disableRipple onClick={() => navigate('/')}>
+            <img src={Logo} style={{ maxHeight: 75 }} />
+          </ButtonBase>
           {isMobile ? (
             <IconButton
               aria-label="menu"
