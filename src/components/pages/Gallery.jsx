@@ -10,7 +10,7 @@ function Gallery({ classes }) {
   const isTablet = useMediaQuery(theme => theme.breakpoints.only('tablet'));
   const images = import.meta.glob('/public/gallery/*');
   const imageArray = Object.keys(images).map((image, index) => ({ src: image.replace('/public', ''), index }));
-  const imageGroups = chunk(_.shuffle(imageArray), 4, isMobile ? 1 : isTablet ? 2 : 4);
+  const imageGroups = chunk(imageArray, 4, isMobile ? 1 : isTablet ? 2 : 4);
   const [selectedImageIndex, setSelectedImageIndex] = useState();
 
   return (
