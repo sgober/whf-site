@@ -38,7 +38,7 @@ function Facility({ classes }) {
     'Blacksmith services',
     'Horse sales and leasing services',
     'Access to horse shows (local one day and away shows)',
-    'Shipping services to and from competitions'
+    'Shipping services'
   ];
 
   return (
