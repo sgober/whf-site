@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { Email, LocationOn, Phone } from '@mui/icons-material';
 import { Box, Grid, IconButton, Typography, useMediaQuery } from '@mui/material';
 import Form from 'components/util/Form';
+import GoogleMaps from 'components/util/GoogleMaps';
 import SocialLinks from 'components/util/SocialLinks';
 import { sendEmail } from 'utils/email';
 
@@ -24,9 +25,7 @@ function Contact({ classes }) {
   );
 
   return (
-    <Box
-      className={classes}
-      sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, gap: 5, alignItems: 'center', justifyContent: 'center' }}>
+    <Box className={classes} sx={{ display: 'flex', flexDirection: 'column', gap: 5, alignItems: 'center' }}>
       <Typography textAlign="center" variant="h1">
         Get in touch today
       </Typography>
@@ -59,6 +58,11 @@ function Contact({ classes }) {
           />
         </Grid>
       </Grid>
+      <GoogleMaps
+        position={{ lat: 42.0102557282786, lng: -71.35651444970946 }}
+        url="https://www.google.com/maps/place/Walnut+Hill+Farm/@42.0099608,-71.3600764,17z/data=!3m1!4b1!4m6!3m5!1s0x89e46708c0557967:0x608d61f1e56a3996!8m2!3d42.0099608!4d-71.3575015!16s%2Fg%2F1tjbt5lj?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D"
+        zoom={12}
+      />
     </Box>
   );
 }

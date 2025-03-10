@@ -22,6 +22,7 @@
     "@fontsource/tenor-sans": "^5.2.5",
     "@mui/icons-material": "^6.4.5",
     "@mui/material": "^6.4.5",
+    "@vis.gl/react-google-maps": "^1.5.1",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "ajv-keywords": "^5.1.0",
