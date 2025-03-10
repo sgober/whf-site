@@ -27,7 +27,7 @@ yarn preview
 ```
 
 Runs the app in the development mode.\
-Open [http://localhost:4173](http://localhost:5173) to view it in your browser.
+Open [http://localhost:4173](http://localhost:4173) to view it in your browser.
 
 ## Deployment
 
