@@ -95,7 +95,8 @@ const theme = createTheme({
     success: { main: variables.success },
     info: { main: variables.info },
     dark: { main: variables.dark },
-    light: { main: variables.light }
+    light: { main: variables.light },
+    google: variables.google
   },
   typography: {
     allVariants: { color: variables.text },
