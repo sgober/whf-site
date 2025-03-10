@@ -7,13 +7,13 @@ function TeamMember(props) {
 
   return (
     <Grid container columns={12} columnSpacing={4} rowSpacing={2}>
-      <Grid item laptop={3} mobile={12} tablet={4}>
+      <Grid item laptop={4} mobile={12} tablet={5}>
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
           <img
             src={image}
             style={{
               borderRadius: '50%',
-              maxWidth: isMobile ? 250 : 300,
+              maxWidth: isMobile ? 300 : 'unset',
               width: '100%',
               aspectRatio: '1 / 1',
               objectFit: 'cover'
@@ -21,7 +21,7 @@ function TeamMember(props) {
           />
         </Box>
       </Grid>
-      <Grid item laptop={9} mobile={12} tablet={8}>
+      <Grid item laptop={8} mobile={12} tablet={7}>
         <Box>
           <Typography variant="h2">{name}</Typography>
           <Typography variant="h6">{title}</Typography>
