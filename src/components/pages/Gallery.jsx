@@ -7,7 +7,7 @@ import { Lightbox } from 'yet-another-react-lightbox';
 function Gallery({ classes }) {
   const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
   const isTablet = useMediaQuery(theme => theme.breakpoints.only('tablet'));
-  const images = import.meta.glob('/public/images/*');
+  const images = import.meta.glob('/public/gallery/*');
   const imageArray = Object.keys(images).map((image, index) => ({ src: image.replace('/public', ''), index }));
   const chunkSize = Math.ceil(_.divide(imageArray.length, isMobile ? 1 : isTablet ? 2 : 4));
   const imageGroups = _.chunk(imageArray, chunkSize);
@@ -21,7 +21,10 @@ function Gallery({ classes }) {
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
               {imageGroup.map((image, iIndex) => (
                 <ButtonBase disableRipple key={iIndex} onClick={() => setSelectedImageIndex(image.index)}>
-                  <img src={image.src} style={{ width: '100%' }} />
+                  <img
+                    src={image.src}
+                    style={{ width: '100%', maxHeight: isMobile ? 450 : isTablet ? 400 : 300, objectFit: 'cover' }}
+                  />
                 </ButtonBase>
               ))}
             </Box>
