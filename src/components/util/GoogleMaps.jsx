@@ -7,10 +7,12 @@ import { APIProvider, Map, Marker } from '@vis.gl/react-google-maps';
 function GoogleMaps({ address, directionsUrl, locationUrl, position, title, zoom }) {
   const [loading, setLoading] = useState(true);
   const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
+  const API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
   const defaultMapOptions = { fullscreenControl: false, mapTypeControl: isMobile ? false : true, streetViewControl: false };
 
   return (
-    <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY} onLoad={() => setLoading(false)}>
+    API_KEY && (
+      <APIProvider apiKey={API_KEY} onLoad={() => setLoading(false)}>
       {!loading && (
         <Map
           defaultCenter={position}
@@ -50,6 +52,7 @@ function GoogleMaps({ address, directionsUrl, locationUrl, position, title, zoom
         </Map>
       )}
     </APIProvider>
+    )
   );
 }
 
