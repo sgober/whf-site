@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography, useMediaQuery } from '@mui/material';
 
 function TeamMember(props) {
   const { children, image, name, title } = props;
+  const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
 
   return (
     <Grid container columns={12} columnSpacing={4} rowSpacing={2}>
@@ -10,7 +11,13 @@ function TeamMember(props) {
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
           <img
             src={image}
-            style={{ borderRadius: '50%', maxWidth: 300, width: '100%', aspectRatio: '1 / 1', objectFit: 'cover' }}
+            style={{
+              borderRadius: '50%',
+              maxWidth: isMobile ? 250 : 300,
+              width: '100%',
+              aspectRatio: '1 / 1',
+              objectFit: 'cover'
+            }}
           />
         </Box>
       </Grid>
