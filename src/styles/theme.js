@@ -51,6 +51,9 @@ const theme = createTheme({
     MuiLink: {
       styleOverrides: {
         root: {
+          color: variables.link,
+          textDecoration: 'underline',
+          textDecorationColor: variables.link,
           '&:hover': {
             cursor: 'pointer'
           }
@@ -75,16 +78,6 @@ const theme = createTheme({
       defaultProps: {
         arrow: true
       }
-    },
-    MuiTypography: {
-      styleOverrides: {
-        link: {
-          textDecoration: 'underline',
-          '&:hover': {
-            cursor: 'pointer'
-          }
-        }
-      }
     }
   },
   palette: {
@@ -96,7 +89,7 @@ const theme = createTheme({
     info: { main: variables.info },
     dark: { main: variables.dark },
     light: { main: variables.light },
-    google: variables.google
+    link: variables.link
   },
   typography: {
     allVariants: { color: variables.text },
@@ -104,6 +97,7 @@ const theme = createTheme({
     tenorSans: 'Tenor Sans',
     fontFamily: ['Open Sans Variable'],
     button: { fontFamily: 'Tenor Sans' },
+    link: { color: variables.link },
     h1: {
       color: variables.primary,
       fontSize: 32,

@@ -42,7 +42,7 @@ function GoogleMaps({ address, directionsUrl, locationUrl, position, title, zoom
                 </Box>
                 <Link
                   onClick={() => window.open(directionsUrl, '_blank')}
-                  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', color: 'google' }}
+                  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
                   variant="body2">
                   <ForkRight />
                   Directions
