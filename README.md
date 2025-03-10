@@ -39,6 +39,10 @@ Currently deploys on [netlify](https://lucky-fairy-4801fb.netlify.app/)
 
 This site uses [EmailJS](https://www.emailjs.com/) to handle sending emails from the contact page, eliminating the need for a backend server. To set this up locally, create a file named `.env` in the root of the project with the contents of `.env_sample` that has the three service id/keys required to use email.js. To hook this up on the deployed version, set the env variables through netlify (site configuration -> environment variables).
 
+## Google Maps Setup
+
+This site uses the [Google Cloud Maps Platform](https://mapsplatform.google.com/?utm_experiment=13102196) and the [react-google-maps](https://visgl.github.io/react-google-maps/) library to render an interactive map on the contact page. To set this up locally, create a file named `.env` in the root of the project with the contents of `.env_sample` that contains the Maps Platform API Key. To hook this up on the deployed version, set the env variables through netlify (site configuration -> environment variables). The map will be hidden if no API key is provided.
+
 ## Formatters
 
 NGD Frontend uses [ESLint](https://eslint.org/) (a linter for code quality rules) and [Prettier](https://prettier.io/) (a code formatter that styles all the code in the same way). To run:
