@@ -16,7 +16,7 @@ import {
   useMediaQuery
 } from '@mui/material';
 import { useLocation, useNavigate } from 'react-router-dom';
-import Logo from 'assets/images/logo.png';
+import Logo from 'assets/logos/LogoRedSmall.png';
 
 function Header() {
   const location = useLocation();
@@ -43,9 +43,11 @@ function Header() {
     <React.Fragment>
       <AppBar color="secondary" component="header" position="sticky">
         <Toolbar sx={{ display: 'flex', flexDirection: isMobile ? 'row' : 'column', justifyContent: 'space-between' }}>
-          {/* TODO: UPDATE LOGO */}
-          <ButtonBase disableRipple onClick={() => navigate('/')}>
-            <img src={Logo} style={{ maxHeight: 75 }} />
+          <ButtonBase
+            disableRipple
+            onClick={() => navigate('/')}
+            sx={{ py: isMobile ? 2 : 3, ...(!isMobile && { pb: 1.5 }) }}>
+            <img src={Logo} style={{ maxHeight: isMobile ? 50 : 75 }} />
           </ButtonBase>
           {isMobile ? (
             <IconButton
@@ -53,7 +55,7 @@ function Header() {
               color="inherit"
               edge="start"
               onClick={() => setMenuOpen(!menuOpen)}
-              sx={{ mr: -1.5 }}>
+              sx={{ mr: -1 }}>
               <Menu />
             </IconButton>
           ) : (
