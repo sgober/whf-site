@@ -9,7 +9,7 @@ function PhotoLink({ description, image, link, title }) {
       {image && (
         <img
           src={image}
-          style={{ borderRadius: '50%', maxWidth: 400, width: '100%', aspectRatio: '1 / 1', objectFit: 'cover' }}
+          style={{ borderRadius: '50%', maxWidth: 350, width: '100%', aspectRatio: '1 / 1', objectFit: 'cover' }}
         />
       )}
       <Box>

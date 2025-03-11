@@ -4,7 +4,8 @@ import { Box, Divider, Grid, Typography, useMediaQuery } from '@mui/material';
 import Slider from 'react-slick';
 import Facility1Image from 'assets/images/facility.jpg';
 import Facility2Image from 'assets/images/facility2.jpg';
-import OurTeam from 'assets/images/our_team.png';
+import Facility4 from 'assets/images/facility/IMG_7398.jpg';
+import Team1 from 'assets/images/team/team1.jpg';
 import PhotoLink from 'components/util/PhotoLink';
 
 function Home({ classes }) {
@@ -40,12 +41,12 @@ function Home({ classes }) {
         <Divider />
         <Grid container columns={2} columnSpacing={5} rowSpacing={5} sx={{ display: 'flex', justifyContent: 'center' }}>
           <Grid item laptop="auto" mobile={2} tablet={1}>
-            <PhotoLink description="Learn more about the Walnut Hill team" image={OurTeam} link="/team" title="Our Team" />
+            <PhotoLink description="Learn more about the Walnut Hill team" image={Team1} link="/team" title="Our Team" />
           </Grid>
           <Grid item laptop="auto" mobile={2} tablet={1}>
             <PhotoLink
               description="Explore Walnut Hill Farm"
-              image={Facility2Image}
+              image={Facility4}
               link="/facilities"
               title="Facilities & Services"
             />
