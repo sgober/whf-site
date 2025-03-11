@@ -9,14 +9,18 @@ function Gallery({ classes }) {
   const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
   const isTablet = useMediaQuery(theme => theme.breakpoints.only('tablet'));
   const [imageArray, setImageArray] = useState([]);
+  const [imageGroups, setImageGroups] = useState([]);
   const [selectedImageIndex, setSelectedImageIndex] = useState();
-  const imageGroups = chunk(imageArray, isMobile ? 1 : isTablet ? 2 : 4, true);
 
   useEffect(() => {
     const images = import.meta.glob('/public/gallery/*');
     const array = _.shuffle(Object.keys(images)).map((image, index) => ({ src: image.replace('/public', ''), index }));
     setImageArray(array);
   }, []);
+
+  useEffect(() => {
+    setImageGroups(chunk(imageArray, isMobile ? 1 : isTablet ? 2 : 4, true));
+  }, [imageArray, isMobile, isTablet]);
 
   return (
     <Box className={classes} sx={{ maxWidth: 1200 }}>
