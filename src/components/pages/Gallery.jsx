@@ -9,16 +9,14 @@ function Gallery({ classes }) {
   const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
   const isTablet = useMediaQuery(theme => theme.breakpoints.only('tablet'));
   const [imageArray, setImageArray] = useState([]);
-  const [imageGroups, setImageGroups] = useState([]);
   const [selectedImageIndex, setSelectedImageIndex] = useState();
+  const imageGroups = chunk(imageArray, isMobile ? 1 : isTablet ? 2 : 4, true);
 
   useEffect(() => {
     const images = import.meta.glob('/public/gallery/*');
     const array = _.shuffle(Object.keys(images)).map((image, index) => ({ src: image.replace('/public', ''), index }));
-    const groups = chunk(array, 4, isMobile ? 1 : isTablet ? 2 : 4);
     setImageArray(array);
-    setImageGroups(groups);
-  }, [isMobile, isTablet]);
+  }, []);
 
   return (
     <Box className={classes} sx={{ maxWidth: 1200 }}>
@@ -28,7 +26,10 @@ function Gallery({ classes }) {
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
               {group.map((image, iIndex) => (
                 <ButtonBase disableRipple key={iIndex} onClick={() => setSelectedImageIndex(image.index)}>
-                  <img src={image.src} style={{ width: '100%', maxHeight: isMobile ? 450 : 350, objectFit: 'cover' }} />
+                  <img
+                    src={image.src}
+                    style={{ maxHeight: isMobile ? 450 : 350, minHeight: 200, objectFit: 'cover', width: '100%' }}
+                  />
                 </ButtonBase>
               ))}
             </Box>
