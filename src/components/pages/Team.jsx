@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Box, Link, Typography, useMediaQuery } from '@mui/material';
-import AbbyImage from 'assets/images/abby.jpg';
+import AbbyImage from 'assets/images/team/abby.jpeg';
 import CaseyImage from 'assets/images/casey.jpg';
 import ErinImage from 'assets/images/team/erin.jpeg';
 import TeamMember from 'components/util/TeamMember';
