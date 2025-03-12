@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Box, Divider, Grid, Typography, useMediaQuery } from '@mui/material';
 import Slider from 'react-slick';
+import Facility4 from 'assets/images/facility/IMG_7398.jpg';
 import Facility1Image from 'assets/images/facility.jpg';
 import Facility2Image from 'assets/images/facility2.jpg';
-import Facility4 from 'assets/images/facility/IMG_7398.jpg';
 import Team1 from 'assets/images/team/team1.jpg';
 import PhotoLink from 'components/util/PhotoLink';
 
@@ -32,10 +32,10 @@ function Home({ classes }) {
             Welcome to Walnut Hill Farm!
           </Typography>
           <Typography textAlign="center" variant="subtitle2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            Set on 17 acres in Plainville, MA, Walnut Hill Farm is a leading boarding facility dedicated to providing
+            exceptional care of the horses while helping clients to achieve their goals. WHF prioritizes each horse’s
+            individual needs, offering tailored care plans that include multiple stabling and turnout options, specialized
+            training, and expert management.
           </Typography>
         </Box>
         <Divider />
