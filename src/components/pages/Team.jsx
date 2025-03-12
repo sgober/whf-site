@@ -16,15 +16,15 @@ function Team({ classes }) {
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: isMobile ? 5 : 8 }}>
         <TeamMember image={CaseyImage} name="Cassandra Smith" title="Head Trainer">
           <Typography>
-            Cassandra or “Casey” got her start riding Morgans walking distance from where Walnut Hill Farm is now. Forming a
-            solid relationship with horses and putting their needs first has always been paramount. This caused Casey to
-            explore different disciples. She brings a wide range of experience from the national grand prixs and
-            international hunter derbies to liberty and bridleless riding. With a strong focus on the basics, Casey enjoys
-            starting young horse and bringing them through the early stages of their careers with patience. Casey believes
-            that creating a strong foundation on the ground leads to success under saddle. Her approach focuses on building
-            confidence and trust. Continuing to work with top trainers in a variety of disciplines, Casey continues to refine
-            her methods to bring out the best in every horse and rider combination. Outside of the barn, Casey is a licensed
-            mental health counselor and a jiu jitsu black belt.
+            Cassandra, or “Casey,” got her start riding Morgans walking distance from Walnut Hill Farm’s current location.
+            Forming a solid relationship with horses and putting their needs first has always been paramount for Casey, which
+            led her to explore several different disciples. She brings a wide range of experience to her training, from the
+            national Grand Prixs and international hunter derbies to liberty training and bridleless riding. With a strong
+            focus on the basics, Casey enjoys starting young horses and bringing them through the early stages of their
+            careers with patience. Casey believes that creating a strong foundation on the ground leads to success under
+            saddle. Her approach focuses on building confidence and trust. Continuing to work with top trainers in a variety
+            of disciplines, Casey constantly refines her methods to bring out the best in every horse and rider combination.
+            Outside of the barn, Casey is a licensed mental health counselor and a jiu jitsu black belt.
             {/* <Link href="https://walnuthillcounseling.com/" target="_blank">
               Walnut Hill Counseling
             </Link> */}
