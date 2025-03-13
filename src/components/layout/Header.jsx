@@ -45,7 +45,7 @@ function Header() {
         <Toolbar sx={{ display: 'flex', flexDirection: isMobile ? 'row' : 'column', justifyContent: 'space-between' }}>
           <ButtonBase
             disableRipple
-            onClick={() => navigate('/')}
+            onClick={() => handleNavigation('/')}
             sx={{ py: isMobile ? 2 : 3, ...(!isMobile && { pb: 1.5 }) }}>
             <img src={Logo} style={{ maxHeight: isMobile ? 50 : 75 }} />
           </ButtonBase>
@@ -59,7 +59,7 @@ function Header() {
               <Menu />
             </IconButton>
           ) : (
-            <Tabs onChange={(e, newValue) => navigate(newValue)} value={location.pathname}>
+            <Tabs onChange={(e, newValue) => handleNavigation(newValue)} value={location.pathname}>
               {tabs.map((tab, index) => (
                 <Tab
                   key={index}
