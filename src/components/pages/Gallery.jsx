@@ -7,7 +7,7 @@ function Gallery({ classes }) {
   const images = import.meta.glob(`/public/gallery/*`);
   return (
     <Box className={classes} sx={{ maxWidth: 1200 }}>
-      <PhotoGallery images={images} />
+      <PhotoGallery images={images} key="gallery" />
     </Box>
   );
 }

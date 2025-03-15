@@ -10,7 +10,7 @@ function Linus({ classes }) {
       <Typography variant="h1" sx={{ textAlign: 'center', pb: 4 }}>
         Linus Fan Club
       </Typography>
-      <PhotoGallery images={images} />
+      <PhotoGallery images={images} key="linus" />
     </Box>
   );
 }

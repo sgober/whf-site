@@ -6,7 +6,7 @@ import { Lightbox } from 'yet-another-react-lightbox';
 import useBreakpoint from 'utils/breakpoint';
 import { chunk } from 'utils/chunk';
 
-function PhotoGallery({ images }) {
+function PhotoGallery({ images = [] }) {
   const breakpoint = useBreakpoint();
   const columns = useMemo(() => ({ mobile: 12, tablet: 6, laptop: 4, desktop: 3 }), []);
   const [imageArray, setImageArray] = useState([]);
