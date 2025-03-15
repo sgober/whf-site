@@ -45,6 +45,7 @@ function Header() {
         <Toolbar sx={{ display: 'flex', flexDirection: isMobile ? 'row' : 'column', justifyContent: 'space-between' }}>
           <ButtonBase
             disableRipple
+            disabled={!isMobile}
             onClick={() => handleNavigation('/')}
             sx={{ py: isMobile ? 2 : 3, ...(!isMobile && { pb: 1.5 }) }}>
             <img src={Logo} style={{ maxHeight: isMobile ? 50 : 75 }} />
