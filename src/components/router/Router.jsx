@@ -6,6 +6,7 @@ import Facility from 'components/pages/Facility';
 import Gallery from 'components/pages/Gallery';
 import Home from 'components/pages/Home';
 import Team from 'components/pages/Team';
+import Linus from 'components/pages/Linus';
 
 function Router() {
   const pageProps = { classes: 'page-content' };
@@ -18,6 +19,7 @@ function Router() {
         <Route element={<Calendar {...pageProps} />} path="calendar" />
         <Route element={<Gallery {...pageProps} />} path="gallery" />
         <Route element={<Contact {...pageProps} />} path="contact" />
+        <Route element={<Linus {...pageProps} />} path="linus" />
         <Route element={<Home {...pageProps} />} path="*" />
       </Route>
     </Routes>
