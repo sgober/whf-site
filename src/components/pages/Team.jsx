@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
 import { Box, Link, Typography, useMediaQuery } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import CaseyImage from 'assets/images/casey.jpg';
 import AbbyImage from 'assets/images/team/abby.jpeg';
 import ErinImage from 'assets/images/team/erin.jpeg';
 import TeamMember from 'components/util/TeamMember';
 
 function Team({ classes }) {
+  const navigate = useNavigate();
   const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
 
   return (
@@ -46,7 +48,11 @@ function Team({ classes }) {
             move to Bristol, Rhode Island where she managed a hunter/jumper farm. Erin loved caring for the horses and
             catering to their individual needs, peaking her interest in veterinary care. Erin worked as an equine technician
             assisting with routine appointments, emergencies and surgeries. Erin loved working with both hospital patients
-            and quarantine mares which helped her find her home at Walnut Hill Farm with her horse Linus.
+            and quarantine mares which helped her find her home at Walnut Hill Farm with her horse{' '}
+            <Link onClick={() => navigate('/linus')} sx={{ color: 'inherit', textDecoration: 'none' }}>
+              Linus
+            </Link>
+            .
           </Typography>
         </TeamMember>
       </Box>
