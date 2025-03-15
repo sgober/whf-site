@@ -51,7 +51,7 @@ function PhotoGallery({ images = [] }) {
 }
 
 PhotoGallery.propTypes = {
-  classes: PropTypes.string
+  images: PropTypes.array
 };
 
 export default PhotoGallery;

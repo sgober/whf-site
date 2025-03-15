@@ -7,7 +7,7 @@ function Linus({ classes }) {
   const images = import.meta.glob(`/public/linus/*`);
   return (
     <Box className={classes} sx={{ maxWidth: 1200 }}>
-      <Typography variant="h1" sx={{ textAlign: 'center', pb: 4 }}>
+      <Typography sx={{ textAlign: 'center', pb: 4 }} variant="h1">
         Linus Fan Club
       </Typography>
       <PhotoGallery images={images} key="linus" />
