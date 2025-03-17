@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Box, Link, Typography, useMediaQuery } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import CaseyImage from 'assets/images/casey.jpg';
+import CaseyImage from 'assets/images/team/casey.jpg';
 import AbbyImage from 'assets/images/team/abby.jpeg';
 import ErinImage from 'assets/images/team/erin.jpeg';
 import TeamMember from 'components/util/TeamMember';
@@ -27,9 +27,6 @@ function Team({ classes }) {
             saddle. Her approach focuses on building confidence and trust. Continuing to work with top trainers in a variety
             of disciplines, Casey constantly refines her methods to bring out the best in every horse and rider combination.
             Outside of the barn, Casey is a licensed mental health counselor and a jiu jitsu black belt.
-            {/* <Link href="https://walnuthillcounseling.com/" target="_blank">
-              Walnut Hill Counseling
-            </Link> */}
           </Typography>
         </TeamMember>
         <TeamMember image={AbbyImage} name="Abigail Sullivan" title="Trainer">
