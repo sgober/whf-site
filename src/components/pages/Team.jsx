@@ -34,7 +34,7 @@ function Team({ classes }) {
             Beginning her riding career with a focus on eventing, Abigail furthered her skills through young adulthood,
             expanding her knowledge of diverse training approaches and methodologies. With a strong emphasis on biomechanics,
             Abigail brings a unique skill set to her training and teaching of both horse and rider. Holding a Master’s degree
-            in Occupational Therapy and having worked in the mental health field alongside her equestrian ventures, Abigail's
+            in Occupational Therapy and having worked in the mental health field alongside her equestrian ventures, Abigail’s
             expertise helps riders improve posture, balance, and alignment, while promoting comfort, safety, and a deeper
             connection with their horses.
           </Typography>
