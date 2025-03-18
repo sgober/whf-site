@@ -16,7 +16,7 @@ function Facility({ classes }) {
     'Indoor wash stall with hot and cold water',
     'Two outdoor wash stalls/grooming areas',
     'Access to extensive trail system from the rear of the property',
-    'Full time manager, barn support staff and two licensed and insured trainers to ensure proper daily care, overallvwellness management and training programs that are comprehensive to meet desired goals for your riding and/or horse development!'
+    'Full time manager, barn support staff and two licensed and insured trainers to ensure proper daily care, overall wellness management and training programs that are comprehensive to meet desired goals for your riding and/or horse development!'
   ];
 
   const boardList = [
