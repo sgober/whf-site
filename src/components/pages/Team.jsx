@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Box, Link, Typography, useMediaQuery } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import AbbyImage from 'assets/images/team/abby.jpeg';
-import CaseyImage from 'assets/images/team/casey.jpg';
+import CaseyImage from 'assets/images/team/casey.jpeg';
 import ErinImage from 'assets/images/team/erin.jpeg';
 import TeamMember from 'components/util/TeamMember';
 
