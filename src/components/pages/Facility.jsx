@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
-import { Box, Link, Typography } from '@mui/material';
+import { Box, Link, Typography, useMediaQuery } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import FacilityImage from 'assets/images/facility.jpg';
+import FacilityImage from 'assets/images/facility/facility3.jpg';
 
 function Facility({ classes }) {
   const navigate = useNavigate();
+  const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
 
   const facilityList = [
     '200 x 80 indoor with GGT footing and full jump course',
@@ -48,7 +49,7 @@ function Facility({ classes }) {
       <Typography sx={{ textAlign: 'center' }} variant="h1">
         Facility & Services
       </Typography>
-      <img src={FacilityImage} style={{ width: '100%' }} />
+      <img src={FacilityImage} style={{ width: '100%', maxHeight: isMobile ? 300 : 500, objectFit: 'cover' }} />
       <Typography sx={{ textAlign: 'center', px: 2, fontWeight: 'bold' }} variant="subtitle2">
         Walnut Hill Farm is conveniently located in Plainville, MA and is easily accessible from Boston and Providence. Our
         facility includes 22 stalls, 23 paddocks, climate controlled tack room, 2 offices, an indoor wash stall, and an

@@ -2,14 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Box, Divider, Grid, Typography, useMediaQuery } from '@mui/material';
 import Slider from 'react-slick';
-import Facility4 from 'assets/images/facility/IMG_7398.jpg';
-import Facility1Image from 'assets/images/facility.jpg';
-import Facility2Image from 'assets/images/facility2.jpg';
+import Facility1 from 'assets/images/facility/facility1.jpg';
+import Facility2 from 'assets/images/facility/facility2.jpeg';
+import Facility3 from 'assets/images/facility/facility3.jpg';
+import Facility4 from 'assets/images/facility/facility4.jpg';
+import Facility5 from 'assets/images/facility/facility5.jpg';
+import Facility6 from 'assets/images/facility/facility6.jpeg';
+import Facility7 from 'assets/images/facility/facility7.jpg';
 import Team1 from 'assets/images/team/team1.jpg';
 import PhotoLink from 'components/util/PhotoLink';
 
 function Home({ classes }) {
-  const slides = [{ src: Facility1Image }, { src: Facility2Image, styles: { objectPosition: '50% 70%' } }];
+  const slides = [
+    { src: Facility2, styles: { objectPosition: '50% 50%' } },
+    { src: Facility3, styles: { objectPosition: '50% 70%' } },
+    { src: Facility5, styles: { objectPosition: '0% 70%' } },
+    { src: Facility6, styles: { objectPosition: '50% 15%' } },
+    { src: Facility7, styles: { objectPosition: '0% 50%' } },
+    { src: Facility4, styles: { objectPosition: '50% 45%' } }
+  ];
   const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
 
   return (
@@ -46,7 +57,7 @@ function Home({ classes }) {
           <Grid item laptop="auto" mobile={2} tablet={1}>
             <PhotoLink
               description="Explore Walnut Hill Farm"
-              image={Facility4}
+              image={Facility1}
               link="/facilities"
               title="Facilities & Services"
             />
