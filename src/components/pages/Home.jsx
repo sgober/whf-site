@@ -17,11 +17,12 @@ function Home({ classes }) {
     { src: Facility2, styles: { objectPosition: '50% 50%' } },
     { src: Facility3, styles: { objectPosition: '50% 70%' } },
     { src: Facility5, styles: { objectPosition: '0% 70%' } },
-    { src: Facility6, styles: { objectPosition: '50% 15%' } },
+    { src: Facility6, styles: { objectPosition: '50% 40%' } },
     { src: Facility7, styles: { objectPosition: '0% 50%' } },
     { src: Facility4, styles: { objectPosition: '50% 45%' } }
   ];
   const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
+  const isTablet = useMediaQuery(theme => theme.breakpoints.only('tablet'));
 
   return (
     <React.Fragment>
@@ -30,7 +31,7 @@ function Home({ classes }) {
           <Box key={index}>
             <img
               src={slide.src}
-              style={{ height: isMobile ? 250 : 600, width: '100%', objectFit: 'cover', ...slide.styles }}
+              style={{ height: isMobile ? 250 : isTablet ? 400 : 600, width: '100%', objectFit: 'cover', ...slide.styles }}
             />
           </Box>
         ))}
