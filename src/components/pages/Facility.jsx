@@ -50,7 +50,7 @@ function Facility({ classes }) {
         Facility & Services
       </Typography>
       <img src={FacilityImage} style={{ width: '100%', maxHeight: isMobile ? 300 : 500, objectFit: 'cover' }} />
-      <Typography sx={{ textAlign: 'center', px: 2, fontWeight: 'bold' }} variant="subtitle2">
+      <Typography sx={{ textAlign: 'center', px: 2 }} variant="subtitle2">
         Walnut Hill Farm is conveniently located in Plainville, MA and is easily accessible from Boston and Providence. Our
         facility includes 22 stalls, 23 paddocks, climate controlled tack room, 2 offices, an indoor wash stall, and an
         indoor viewing area. See below for a full list of our services and amenities.
