@@ -13,10 +13,12 @@ const getSchema = fields => {
     schema.properties[field.id] = {
       type: 'string',
       format: field.format,
+      isNotEmptyString: field.required,
       isNotNull: field.required,
       nullable: true,
       errorMessage: {
         ...(field.format && { format: `Must be a valid ${field.format}` }),
+        ...(field.required && { isNotEmptyString: 'This field is required' }),
         ...(field.required && { isNotNull: 'This field is required' })
       }
     };

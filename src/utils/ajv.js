@@ -13,4 +13,11 @@ ajv.addKeyword({
   errors: false
 });
 
+ajv.addKeyword({
+  keyword: 'isNotEmptyString',
+  type: 'string',
+  validate: (schema, data) => data !== '',
+  errors: false
+});
+
 export { ajv };
