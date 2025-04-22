@@ -32,6 +32,14 @@
     "type": "CL"
   },
   {
+    "name": "Moss Show Stables One Day",
+    "start": "4/19/25",
+    "end": "4/19/25",
+    "location": "Westford, MA",
+    "farm": "Moss Show Stables",
+    "type": "HJ"
+  },
+  {
     "name": "Fieldstone Spring Festival I",
     "start": "5/7/25",
     "end": "5/11/25",
@@ -46,6 +54,14 @@
     "location": "Millis, MA",
     "farm": "Apple Knoll Farm",
     "type": "EV"
+  },
+  {
+    "name": "Braveheart Beasts Clinic",
+    "start": "5/12/25",
+    "end": "5/13/25",
+    "location": "Plainville, MA",
+    "farm": "Walnut Hill Farm",
+    "type": "CL"
   },
   {
     "name": "HITS Premiere",
