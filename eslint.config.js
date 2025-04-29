@@ -42,6 +42,7 @@ export default [
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       camelcase: ['error', { allow: ['from_email', 'from_name', 'reply_to'] }],
       'eol-last': 'error',
+      'import/default': 'off',
       'import/order': [
         'error',
         {
@@ -66,6 +67,7 @@ export default [
         }
       ],
       'import/namespace': 'off',
+      'import/no-named-as-default': 'off',
       'import/no-named-as-default-member': 'off',
       'no-duplicate-imports': 'error',
       'no-restricted-imports': [
