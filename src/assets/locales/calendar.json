@@ -1,27 +1,11 @@
 [
   {
-    "name": "Stargazer Hill One Day",
-    "start": "3/23/25",
-    "end": "3/23/25",
-    "location": "Plainville, MA",
-    "farm": "Stargazer Hill Farm",
-    "type": "HJ"
-  },
-  {
     "name": "Braveheart Beasts Clinic",
     "start": "3/24/25",
     "end": "3/25/25",
     "location": "Plainville, MA",
     "farm": "Walnut Hill Farm",
     "type": "CL"
-  },
-  {
-    "name": "Stargazer Hill One Day",
-    "start": "3/29/25",
-    "end": "3/29/25",
-    "location": "Plainville, MA",
-    "farm": "Stargazer Hill Farm",
-    "type": "HJ"
   },
   {
     "name": "Braveheart Beasts Clinic",
@@ -32,84 +16,12 @@
     "type": "CL"
   },
   {
-    "name": "Moss Show Stables One Day",
-    "start": "4/19/25",
-    "end": "4/19/25",
-    "location": "Westford, MA",
-    "farm": "Moss Show Stables",
-    "type": "HJ"
-  },
-  {
-    "name": "Fieldstone Spring Festival I",
-    "start": "5/7/25",
-    "end": "5/11/25",
-    "location": "Halifax, MA",
-    "farm": "Fieldstone Show Park",
-    "type": "HJ"
-  },
-  {
-    "name": "Schooling Horse Trials",
-    "start": "5/10/25",
-    "end": "5/10/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
-    "type": "EV"
-  },
-  {
     "name": "Braveheart Beasts Clinic",
     "start": "5/12/25",
     "end": "5/13/25",
     "location": "Plainville, MA",
     "farm": "Walnut Hill Farm",
     "type": "CL"
-  },
-  {
-    "name": "HITS Premiere",
-    "start": "5/16/25",
-    "end": "5/16/25",
-    "location": "Saugerties, NY",
-    "farm": "HITS Hudson Valley",
-    "type": "HJ"
-  },
-  {
-    "name": "HITS I",
-    "start": "5/21/25",
-    "end": "5/25/25",
-    "location": "Saugerties, NY",
-    "farm": "HITS Hudson Valley",
-    "type": "HJ"
-  },
-  {
-    "name": "NEDA Spring I & II",
-    "start": "5/30/25",
-    "end": "5/31/25",
-    "location": "Halifax, MA",
-    "farm": "Fieldstone Show Park",
-    "type": "DR"
-  },
-  {
-    "name": "USEA Horse Trials",
-    "start": "6/7/25",
-    "end": "6/7/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
-    "type": "EV"
-  },
-  {
-    "name": "FSP June I",
-    "start": "6/11/25",
-    "end": "6/15/25",
-    "location": "Halifax, MA",
-    "farm": "Fieldstone Show Park",
-    "type": "HJ"
-  },
-  {
-    "name": "Saratoga Classic II",
-    "start": "6/18/25",
-    "end": "6/22/25",
-    "location": "Stillwater, NY",
-    "farm": "White  Hollow  Farm",
-    "type": "HJ"
   },
   {
     "name": "Tik and Sinead Maynard Clinic",
@@ -128,6 +40,46 @@
     "type": "DR"
   },
   {
+    "name": "NEDA Fall Kickoff",
+    "start": "8/31/25",
+    "end": "8/31/25",
+    "location": "Millis, MA",
+    "farm": "Apple Knoll Farm",
+    "type": "DR"
+  },
+  {
+    "name": "CRDA Schooling Show",
+    "start": "9/28/25",
+    "end": "9/28/25",
+    "location": "Millis, MA",
+    "farm": "Apple Knoll Farm",
+    "type": "DR"
+  },
+  {
+    "name": "NEDA Spring I & II",
+    "start": "5/30/25",
+    "end": "5/31/25",
+    "location": "Halifax, MA",
+    "farm": "Fieldstone Show Park",
+    "type": "DR"
+  },
+  {
+    "name": "Schooling Horse Trials",
+    "start": "5/10/25",
+    "end": "5/10/25",
+    "location": "Millis, MA",
+    "farm": "Apple Knoll Farm",
+    "type": "EV"
+  },
+  {
+    "name": "USEA Horse Trials",
+    "start": "6/7/25",
+    "end": "6/7/25",
+    "location": "Millis, MA",
+    "farm": "Apple Knoll Farm",
+    "type": "EV"
+  },
+  {
     "name": "USEF/USEA Horse Trials",
     "start": "7/20/25",
     "end": "7/20/25",
@@ -136,33 +88,97 @@
     "type": "EV"
   },
   {
-    "name": "Head of the Bay",
-    "start": "7/23/25",
-    "end": "7/27/25",
+    "name": "Schooling Horse Trials Championships",
+    "start": "9/6/25",
+    "end": "9/6/25",
+    "location": "Millis, MA",
+    "farm": "Apple Knoll Farm",
+    "type": "EV"
+  },
+  {
+    "name": "USEF/USEA Horse Trials",
+    "start": "9/28/25",
+    "end": "9/28/25",
+    "location": "Sherborn, MA",
+    "farm": "Course Brook Farm",
+    "type": "EV"
+  },
+  {
+    "name": "USEA Horse Trials",
+    "start": "10/4/25",
+    "end": "10/4/25",
+    "location": "Millis, MA",
+    "farm": "Apple Knoll Farm",
+    "type": "EV"
+  },
+  {
+    "name": "Stargazer Hill One Day",
+    "start": "3/23/25",
+    "end": "3/23/25",
+    "location": "Plainville, MA",
+    "farm": "Stargazer Hill Farm",
+    "type": "HJ"
+  },
+  {
+    "name": "Stargazer Hill One Day",
+    "start": "3/29/25",
+    "end": "3/29/25",
+    "location": "Plainville, MA",
+    "farm": "Stargazer Hill Farm",
+    "type": "HJ"
+  },
+  {
+    "name": "Moss Show Stables One Day",
+    "start": "4/19/25",
+    "end": "4/19/25",
+    "location": "Westford, MA",
+    "farm": "Moss Show Stables",
+    "type": "HJ"
+  },
+  {
+    "name": "Fieldstone Spring Festival I",
+    "start": "5/7/25",
+    "end": "5/11/25",
     "location": "Halifax, MA",
     "farm": "Fieldstone Show Park",
+    "type": "HJ"
+  },
+  {
+    "name": "HITS Premiere",
+    "start": "5/16/25",
+    "end": "5/16/25",
+    "location": "Saugerties, NY",
+    "farm": "HITS Hudson Valley",
+    "type": "HJ"
+  },
+  {
+    "name": "HITS I",
+    "start": "5/21/25",
+    "end": "5/25/25",
+    "location": "Saugerties, NY",
+    "farm": "HITS Hudson Valley",
+    "type": "HJ"
+  },
+  {
+    "name": "FSP June I",
+    "start": "6/11/25",
+    "end": "6/15/25",
+    "location": "Halifax, MA",
+    "farm": "Fieldstone Show Park",
+    "type": "HJ"
+  },
+  {
+    "name": "Saratoga Classic II",
+    "start": "6/18/25",
+    "end": "6/22/25",
+    "location": "Stillwater, NY",
+    "farm": "White  Hollow  Farm",
     "type": "HJ"
   },
   {
     "name": "HITS V",
     "start": "7/23/25",
     "end": "7/27/25",
-    "location": "Saugerties, NY",
-    "farm": "HITS Hudson Valley",
-    "type": "HJ"
-  },
-  {
-    "name": "CRDA Schooling Show",
-    "start": "7/27/25",
-    "end": "7/27/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
-    "type": "DR"
-  },
-  {
-    "name": "HITS VI",
-    "start": "7/30/25",
-    "end": "8/3/25",
     "location": "Saugerties, NY",
     "farm": "HITS Hudson Valley",
     "type": "HJ"
@@ -190,46 +206,6 @@
     "location": "Halifax, MA",
     "farm": "Fieldstone Show Park",
     "type": "HJ"
-  },
-  {
-    "name": "NEDA Fall Kickoff",
-    "start": "8/31/25",
-    "end": "8/31/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
-    "type": "DR"
-  },
-  {
-    "name": "Schooling Horse Trials Championships",
-    "start": "9/6/25",
-    "end": "9/6/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
-    "type": "EV"
-  },
-  {
-    "name": "CRDA Schooling Show",
-    "start": "9/28/25",
-    "end": "9/28/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
-    "type": "DR"
-  },
-  {
-    "name": "USEF/USEA Horse Trials",
-    "start": "9/28/25",
-    "end": "9/28/25",
-    "location": "Sherborn, MA",
-    "farm": "Course Brook Farm",
-    "type": "EV"
-  },
-  {
-    "name": "USEA Horse Trials",
-    "start": "10/4/25",
-    "end": "10/4/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
-    "type": "EV"
   },
   {
     "name": "New England Equitation Championships",
