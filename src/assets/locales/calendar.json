@@ -184,6 +184,22 @@
     "type": "HJ"
   },
   {
+    "name": "Festival of the Horse",
+    "start": "6/27/25",
+    "end": "6/29/25",
+    "location": "Saugerties, NY",
+    "farm": "HITS Hudson Valley",
+    "type": "HJ"
+  },
+  {
+    "name": "NHHJA Summer Festival",
+    "start": "7/2/25",
+    "end": "7/6/25",
+    "location": "Halifax, MA",
+    "farm": "Fieldstone Show Park",
+    "type": "HJ"
+  },
+  {
     "name": "HITS V",
     "start": "7/23/25",
     "end": "7/27/25",
