@@ -24,6 +24,14 @@
     "type": "CL"
   },
   {
+    "name": "Braveheart Beasts and Brendan Wise Clinic",
+    "start": "10/3/25",
+    "end": "10/5/25",
+    "location": "Plainville, MA",
+    "farm": "Walnut Hill Farm",
+    "type": "CL"
+  },
+  {
     "name": "Tik and Sinead Maynard Clinic",
     "start": "6/26/25",
     "end": "6/27/25",
@@ -237,6 +245,22 @@
     "end": "10/19/25",
     "location": "Springfield, MA",
     "farm": "Eastern States Exposition",
+    "type": "HJ"
+  },
+  {
+    "name": "Hunter Derby Day",
+    "start": "10/19/25",
+    "end": "10/19/25",
+    "location": "Plainville, MA",
+    "farm": "Walnut Hill Farm",
+    "type": "HJ"
+  },
+  {
+    "name": "Stargazer Hill One Day",
+    "start": "11/16/25",
+    "end": "11/16/25",
+    "location": "Plainville, MA",
+    "farm": "Stargazer Hill Farm",
     "type": "HJ"
   }
 ]
