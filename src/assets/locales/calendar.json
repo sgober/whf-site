@@ -1,266 +1,170 @@
 [
   {
-    "name": "Braveheart Beasts Clinic",
-    "start": "3/24/25",
-    "end": "3/25/25",
+    "name": "Shawna Karrasch Clinic",
+    "start": "1/24/26",
+    "end": "1/25/26",
     "location": "Plainville, MA",
     "farm": "Walnut Hill Farm",
     "type": "CL"
   },
   {
-    "name": "Braveheart Beasts Clinic",
-    "start": "4/14/25",
-    "end": "4/15/25",
-    "location": "Plainville, MA",
-    "farm": "Walnut Hill Farm",
-    "type": "CL"
-  },
-  {
-    "name": "Braveheart Beasts Clinic",
-    "start": "5/12/25",
-    "end": "5/13/25",
-    "location": "Plainville, MA",
-    "farm": "Walnut Hill Farm",
-    "type": "CL"
-  },
-  {
-    "name": "Braveheart Beasts and Brendan Wise Clinic",
-    "start": "10/3/25",
-    "end": "10/5/25",
-    "location": "Plainville, MA",
-    "farm": "Walnut Hill Farm",
-    "type": "CL"
-  },
-  {
-    "name": "Tik and Sinead Maynard Clinic",
-    "start": "6/26/25",
-    "end": "6/27/25",
-    "location": "Plainville, MA",
-    "farm": "Walnut Hill Farm",
-    "type": "CL"
-  },
-  {
-    "name": "NEDA Summer Show",
-    "start": "7/13/25",
-    "end": "7/13/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
+    "name": "Mystic Valley",
+    "start": "4/25/26",
+    "end": "4/26/26",
+    "location": "Gales Ferry, CT",
+    "farm": "Mystic Valley Hunt Club",
     "type": "DR"
   },
   {
-    "name": "NEDA Fall Kickoff",
-    "start": "8/31/25",
-    "end": "8/31/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
-    "type": "DR"
-  },
-  {
-    "name": "CRDA Schooling Show",
-    "start": "9/28/25",
-    "end": "9/28/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
+    "name": "Bear Spot I & II",
+    "start": "5/16/26",
+    "end": "5/17/26",
+    "location": "Acton, MA",
+    "farm": "Bear Spot Farm",
     "type": "DR"
   },
   {
     "name": "NEDA Spring I & II",
-    "start": "5/30/25",
-    "end": "5/31/25",
+    "start": "5/29/26",
+    "end": "5/31/26",
     "location": "Halifax, MA",
     "farm": "Fieldstone Show Park",
     "type": "DR"
   },
   {
-    "name": "Schooling Horse Trials",
-    "start": "5/10/25",
-    "end": "5/10/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
-    "type": "EV"
+    "name": "Mystic Valley",
+    "start": "6/6/26",
+    "end": "6/7/26",
+    "location": "Gales Ferry, CT",
+    "farm": "Mystic Valley Hunt Club",
+    "type": "DR"
   },
   {
-    "name": "USEA Horse Trials",
-    "start": "6/7/25",
-    "end": "6/7/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
-    "type": "EV"
+    "name": "Mount Holyoke Dressage Show I & II",
+    "start": "6/24/26",
+    "end": "6/28/26",
+    "location": "South Hadley, MA",
+    "farm": "Mount Holyoke College Equestrian Center",
+    "type": "DR"
   },
   {
-    "name": "USEF/USEA Horse Trials",
-    "start": "7/20/25",
-    "end": "7/20/25",
-    "location": "Sherborn, MA",
-    "farm": "Course Brook Farm",
-    "type": "EV"
+    "name": "Bear Spot I & II",
+    "start": "8/1/26",
+    "end": "8/2/26",
+    "location": "Acton, MA",
+    "farm": "Bear Spot Farm",
+    "type": "DR"
   },
   {
-    "name": "Schooling Horse Trials Championships",
-    "start": "9/6/25",
-    "end": "9/6/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
-    "type": "EV"
-  },
-  {
-    "name": "USEF/USEA Horse Trials",
-    "start": "9/28/25",
-    "end": "9/28/25",
-    "location": "Sherborn, MA",
-    "farm": "Course Brook Farm",
-    "type": "EV"
-  },
-  {
-    "name": "USEA Horse Trials",
-    "start": "10/4/25",
-    "end": "10/4/25",
-    "location": "Millis, MA",
-    "farm": "Apple Knoll Farm",
-    "type": "EV"
-  },
-  {
-    "name": "Stargazer Hill One Day",
-    "start": "3/23/25",
-    "end": "3/23/25",
-    "location": "Plainville, MA",
-    "farm": "Stargazer Hill Farm",
-    "type": "HJ"
-  },
-  {
-    "name": "Stargazer Hill One Day",
-    "start": "3/29/25",
-    "end": "3/29/25",
-    "location": "Plainville, MA",
-    "farm": "Stargazer Hill Farm",
-    "type": "HJ"
-  },
-  {
-    "name": "Moss Show Stables One Day",
-    "start": "4/19/25",
-    "end": "4/19/25",
-    "location": "Westford, MA",
-    "farm": "Moss Show Stables",
+    "name": "Next Venture One Day",
+    "start": "5/2/26",
+    "end": "5/2/26",
+    "location": "Medway, MA",
+    "farm": "Next Venture Farm",
     "type": "HJ"
   },
   {
     "name": "Fieldstone Spring Festival I",
-    "start": "5/7/25",
-    "end": "5/11/25",
+    "start": "5/6/26",
+    "end": "5/10/26",
     "location": "Halifax, MA",
     "farm": "Fieldstone Show Park",
     "type": "HJ"
   },
   {
-    "name": "HITS Premiere",
-    "start": "5/16/25",
-    "end": "5/16/25",
-    "location": "Saugerties, NY",
-    "farm": "HITS Hudson Valley",
+    "name": "Fieldstone Spring Festival II",
+    "start": "5/13/26",
+    "end": "5/17/26",
+    "location": "Halifax, MA",
+    "farm": "Fieldstone Show Park",
     "type": "HJ"
   },
   {
-    "name": "HITS I",
-    "start": "5/21/25",
-    "end": "5/25/25",
+    "name": "HITS III",
+    "start": "6/3/26",
+    "end": "6/7/26",
     "location": "Saugerties, NY",
     "farm": "HITS Hudson Valley",
-    "type": "HJ"
-  },
-  {
-    "name": "GFF Horse Show II",
-    "start": "6/1/25",
-    "end": "6/1/25",
-    "location": "Buzzards Bay, MA",
-    "farm": "Grazing Fields Farm",
     "type": "HJ"
   },
   {
     "name": "FSP June I",
-    "start": "6/11/25",
-    "end": "6/15/25",
+    "start": "6/10/26",
+    "end": "6/14/26",
     "location": "Halifax, MA",
     "farm": "Fieldstone Show Park",
     "type": "HJ"
   },
   {
-    "name": "Saratoga Classic II",
-    "start": "6/18/25",
-    "end": "6/22/25",
+    "name": "Festival of the Horse",
+    "start": "6/19/26",
+    "end": "6/21/26",
+    "location": "Saugerties, NY",
+    "farm": "HITS Hudson Valley",
+    "type": "HJ"
+  },
+  {
+    "name": "Saratoga WIB Spectacular",
+    "start": "7/8/26",
+    "end": "7/12/26",
     "location": "Stillwater, NY",
     "farm": "White  Hollow  Farm",
     "type": "HJ"
   },
   {
-    "name": "Festival of the Horse",
-    "start": "6/27/25",
-    "end": "6/29/25",
-    "location": "Saugerties, NY",
-    "farm": "HITS Hudson Valley",
-    "type": "HJ"
-  },
-  {
     "name": "NHHJA Summer Festival",
-    "start": "7/2/25",
-    "end": "7/6/25",
+    "start": "7/14/26",
+    "end": "7/19/26",
     "location": "Halifax, MA",
     "farm": "Fieldstone Show Park",
     "type": "HJ"
   },
   {
-    "name": "HITS V",
-    "start": "7/23/25",
-    "end": "7/27/25",
-    "location": "Saugerties, NY",
-    "farm": "HITS Hudson Valley",
+    "name": "Head of the Bay",
+    "start": "7/22/26",
+    "end": "7/26/26",
+    "location": "Halifax, MA",
+    "farm": "Fieldstone Show Park",
     "type": "HJ"
   },
   {
-    "name": "Fieldstone Summer Showcase I",
-    "start": "8/13/25",
-    "end": "8/17/25",
-    "location": "Halifax, MA",
-    "farm": "Fieldstone Show Park",
+    "name": "Vermont Summer Celebration",
+    "start": "8/5/26",
+    "end": "8/9/26",
+    "location": "Manchester, VT",
+    "farm": "Harold Beebe Farm",
     "type": "HJ"
   },
   {
     "name": "Fieldstone Summer Showcase II",
-    "start": "8/19/25",
-    "end": "8/23/25",
+    "start": "8/19/26",
+    "end": "8/2/26",
     "location": "Halifax, MA",
     "farm": "Fieldstone Show Park",
     "type": "HJ"
   },
   {
-    "name": "MHJ Finals",
-    "start": "8/24/25",
-    "end": "8/24/25",
-    "location": "Halifax, MA",
-    "farm": "Fieldstone Show Park",
+    "name": "NHHJA Finals",
+    "start": "9/17/26",
+    "end": "9/20/26",
+    "location": "Northamption, MA",
+    "farm": "Three County Fairgrounds",
+    "type": "HJ"
+  },
+  {
+    "name": "MHC Days of Champions",
+    "start": "9/25/26",
+    "end": "9/27/26",
+    "location": "Northamption, MA",
+    "farm": "Three County Fairgrounds",
     "type": "HJ"
   },
   {
     "name": "New England Equitation Championships",
-    "start": "10/14/25",
-    "end": "10/19/25",
+    "start": "10/14/26",
+    "end": "10/18/26",
     "location": "Springfield, MA",
     "farm": "Eastern States Exposition",
-    "type": "HJ"
-  },
-  {
-    "name": "Hunter Derby Day",
-    "start": "10/19/25",
-    "end": "10/19/25",
-    "location": "Plainville, MA",
-    "farm": "Walnut Hill Farm",
-    "type": "HJ"
-  },
-  {
-    "name": "Stargazer Hill One Day",
-    "start": "11/16/25",
-    "end": "11/16/25",
-    "location": "Plainville, MA",
-    "farm": "Stargazer Hill Farm",
     "type": "HJ"
   }
 ]
