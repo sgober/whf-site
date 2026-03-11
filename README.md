@@ -2,11 +2,11 @@
 
 ## Installing and Running
 
-`whf-site` is a React application that is deployed to ADD WEBSITE URL.
+`whf-site` is a React application that is deployed to [ridewalnuthill.com](https://ridewalnuthill.com/).
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en) (using version 20.10)
+- [Node.js](https://nodejs.org/en) (using version 24.13.1)
 - [Yarn](https://yarnpkg.com/)
 
 ### Run Development Mode
