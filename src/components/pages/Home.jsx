@@ -9,7 +9,7 @@ import Facility4 from 'assets/images/facility/facility4.jpg';
 import Facility5 from 'assets/images/facility/facility5.jpg';
 import Facility6 from 'assets/images/facility/facility6.jpeg';
 import Facility7 from 'assets/images/facility/facility7.jpg';
-import Team1 from 'assets/images/team/team1.jpg';
+import Team from 'assets/images/team/team.jpeg';
 import PhotoLink from 'components/util/PhotoLink';
 
 function Home({ classes }) {
@@ -53,7 +53,7 @@ function Home({ classes }) {
         <Divider />
         <Grid container columns={2} columnSpacing={5} rowSpacing={5} sx={{ display: 'flex', justifyContent: 'center' }}>
           <Grid item laptop="auto" mobile={2} tablet={1}>
-            <PhotoLink description="Learn more about the Walnut Hill team" image={Team1} link="/team" title="Our Team" />
+            <PhotoLink description="Learn more about the Walnut Hill team" image={Team} link="/team" title="Our Team" />
           </Grid>
           <Grid item laptop="auto" mobile={2} tablet={1}>
             <PhotoLink

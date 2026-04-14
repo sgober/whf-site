@@ -24,8 +24,7 @@ function Calendar({ classes }) {
   return (
     <Box className={classes} sx={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
       <Typography textAlign="center" variant="h1">
-        {/* {moment().year()} */}
-        2026 Calendar
+        {moment().year()} Calendar
       </Typography>
       <Box sx={{ display: 'flex', flexDirection: 'column', alignSelf: 'center', gap: 5, width: 'fit-content' }}>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
