@@ -9,7 +9,7 @@ import Facility4 from 'assets/images/facility/facility4.jpg';
 import Facility5 from 'assets/images/facility/facility5.jpg';
 import Facility6 from 'assets/images/facility/facility6.jpeg';
 import Facility7 from 'assets/images/facility/facility7.jpg';
-import Team from 'assets/images/team/team.jpeg';
+import Team from 'assets/images/team/team.jpg';
 import PhotoLink from 'components/util/PhotoLink';
 
 function Home({ classes }) {
