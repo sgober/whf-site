@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Box, Divider, Grid, Typography, useMediaQuery } from '@mui/material';
-import Slider from 'react-slick';
+import SlickSlider from 'react-slick';
 import Facility1 from 'assets/images/facility/facility1.jpg';
 import Facility2 from 'assets/images/facility/facility2.jpeg';
 import Facility3 from 'assets/images/facility/facility3.jpg';
@@ -23,6 +23,7 @@ function Home({ classes }) {
   ];
   const isMobile = useMediaQuery(theme => theme.breakpoints.only('mobile'));
   const isTablet = useMediaQuery(theme => theme.breakpoints.only('tablet'));
+  const Slider = SlickSlider.default || SlickSlider;
 
   return (
     <React.Fragment>
