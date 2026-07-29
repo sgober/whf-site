@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router';
 import Layout from 'components/layout/Layout';
 import Calendar from 'components/pages/Calendar';
 import Contact from 'components/pages/Contact';

@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router';
 import { ToastContainer } from 'react-toastify';
 import Router from 'components/router/Router';
 import ScrollToTop from 'components/util/ScrollToTop';

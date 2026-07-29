@@ -1,7 +1,7 @@
 import { useCallback, useEffect } from 'react';
 import { KeyboardArrowUp } from '@mui/icons-material';
 import { Box, Fab, Fade, useMediaQuery, useScrollTrigger } from '@mui/material';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router';
 
 export default function ScrollToTop() {
   const { pathname } = useLocation();

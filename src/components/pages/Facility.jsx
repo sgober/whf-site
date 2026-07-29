@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Box, Link, Typography, useMediaQuery } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import FacilityImage from 'assets/images/facility/facility3.jpg';
 
 function Facility({ classes }) {

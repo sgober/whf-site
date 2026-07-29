@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Box, ButtonBase, Typography } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 
 function PhotoLink({ description, image, link, title }) {
   const navigate = useNavigate();

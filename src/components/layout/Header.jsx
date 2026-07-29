@@ -15,7 +15,7 @@ import {
   Toolbar,
   useMediaQuery
 } from '@mui/material';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router';
 import Logo from 'assets/logos/LogoRedSmall.png';
 
 function Header() {
