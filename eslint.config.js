@@ -1,12 +1,13 @@
 import js from '@eslint/js';
 import importPlugin from 'eslint-plugin-import';
+import importXPlugin from 'eslint-plugin-import-x';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import globals from 'globals';
 
 export default [
-  importPlugin.flatConfigs.recommended,
+  js.configs.recommended,
   { ignores: ['dist'] },
   {
     files: ['**/*.{js,jsx}'],
@@ -30,6 +31,8 @@ export default [
     },
     plugins: {
       react,
+      import: importPlugin,
+      'import-x': importXPlugin,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh
     },

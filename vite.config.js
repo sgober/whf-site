@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import jsconfigPaths from 'vite-jsconfig-paths';
